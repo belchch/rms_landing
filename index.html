@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RMS — платформа для экспертизы по ДДУ</title>
-  <meta name="description" content="RMS: осмотр квартиры, план с обмерами по лазерному дальномеру, дефекты с фото, смета устранения и материалы для заключения — из одного выезда на объект." />
+  <meta name="description" content="RMS: лёгкие замеры лазерным дальномером — и готовые отчёты: ведомость объёмов работ, смета материалов и работ, отчёт по дефектам. Всё дело по ДДУ за один выезд." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -20,11 +20,11 @@
       <span>RMS</span>
     </a>
     <nav class="site-nav">
-      <a href="#assessment">Осмотр</a>
-      <a href="#measure">Обмеры</a>
-      <a href="#photos">Фото</a>
+      <a href="#worlds">Как это работает</a>
+      <a href="#measure">Замеры</a>
+      <a href="#boq">Объёмы работ</a>
       <a href="#estimate">Смета</a>
-      <a href="#office">Поле → офис</a>
+      <a href="#photos">Фото</a>
     </nav>
     <a class="btn btn-primary btn-sm" href="#cta">Запросить демо</a>
   </div>
@@ -36,11 +36,11 @@
     <div class="container hero-inner">
       <div class="hero-copy">
         <p class="hero-tag">Платформа для экспертизы по&nbsp;ДДУ</p>
-        <h1>Всё дело по&nbsp;ДДУ — из&nbsp;одного выезда на&nbsp;объект</h1>
-        <p class="lead">Эксперт рисует план и&nbsp;фиксирует дефекты с&nbsp;телефона, дальномер сам передаёт размеры в&nbsp;чертёж, смета считается из&nbsp;обмеров. Офис получает готовые материалы дела — а&nbsp;не&nbsp;коробку с&nbsp;блокнотами и&nbsp;галерею из&nbsp;300&nbsp;фото.</p>
+        <h1>Лёгкие замеры — и&nbsp;все отчёты готовы</h1>
+        <p class="lead">Эксперт замеряет квартиру дальномером и&nbsp;отмечает дефекты на&nbsp;плане. Ведомость объёмов работ, смета и&nbsp;отчёт по&nbsp;дефектам строятся из&nbsp;замеров сами — дело по&nbsp;ДДУ собирается за&nbsp;один выезд.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#cta">Запросить демо</a>
-          <a class="btn btn-ghost" href="#assessment">Как это работает</a>
+          <a class="btn btn-ghost" href="#worlds">Как это работает</a>
         </div>
         <p class="hero-note">Для экспертных организаций: приёмка новостроек и&nbsp;судебные споры по&nbsp;ДДУ</p>
       </div>
@@ -116,7 +116,7 @@
           </svg>
           <div class="plan-card-foot">
             <span class="chip mono">дефектов: 14</span>
-            <span class="chip mono">фото: 46</span>
+            <span class="chip mono">ВОР: 18 позиций</span>
             <span class="chip chip-accent mono">смета: 214 306 ₽</span>
           </div>
         </div>
@@ -142,33 +142,41 @@
     </div>
   </section>
 
-  <section class="assessment" id="assessment">
+  <section class="worlds" id="worlds">
     <div class="container">
-      <p class="eyebrow reveal">Осмотр</p>
-      <h2 class="reveal">Один выезд — полностью задокументированное дело</h2>
-      <p class="section-lead reveal">Всё, что нужно для заключения по&nbsp;ДДУ, эксперт фиксирует по&nbsp;ходу осмотра. Ничего не&nbsp;разбирается вечером по&nbsp;памяти и&nbsp;не&nbsp;восстанавливается повторным выездом.</p>
-      <div class="pill-grid">
-        <div class="pill-card reveal">
-          <h3>Данные дела и объекта</h3>
-          <p>Дольщик, застройщик, адрес, реквизиты ДДУ — карточка дела заполняется один раз и тянется во все документы.</p>
+      <p class="eyebrow reveal">Два мира</p>
+      <h2 class="reveal">Эксперт делает замеры — отчёты появляются сами</h2>
+      <p class="section-lead reveal">У эксперта один мир — объект: план, замеры, дефекты, фото. Второй мир — документы: ведомость объёмов, смета и&nbsp;отчёты. Между ними нет ручного труда.</p>
+      <div class="worlds-grid">
+        <div class="world-card reveal">
+          <div class="world-head">
+            <span class="world-num mono">МИР 1 · НА ОБЪЕКТЕ</span>
+            <h3>Замеры</h3>
+          </div>
+          <ul class="world-list">
+            <li>План квартиры — размеры прилетают с&nbsp;дальномера</li>
+            <li>Дефекты с&nbsp;привязкой к&nbsp;помещению и&nbsp;стене</li>
+            <li>Фото к&nbsp;каждому дефекту, с&nbsp;датой и&nbsp;временем</li>
+            <li>Чек-лист осмотра — ничего не&nbsp;забыто</li>
+          </ul>
         </div>
-        <div class="pill-card reveal">
-          <h3>План и обмеры</h3>
-          <p>План квартиры рисуется на объекте, размеры прилетают с лазерного дальномера. Площади считаются сами.</p>
+        <div class="worlds-arrow reveal" aria-hidden="true">
+          <svg viewBox="0 0 48 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 H42 M34 4 L42 12 L34 20"/></svg>
+          <span class="mono">автоматически</span>
         </div>
-        <div class="pill-card reveal">
-          <h3>Дефекты с привязкой</h3>
-          <p>Каждый дефект стоит на плане: помещение, стена, координата. Тип дефекта — из справочника с нормативами.</p>
-        </div>
-        <div class="pill-card reveal">
-          <h3>Фото и заметки</h3>
-          <p>Фото снимаются из карточки дефекта и привязываются к нему автоматически. Заметки — туда же.</p>
-        </div>
-        <div class="pill-card reveal">
-          <h3>Чек-лист осмотра</h3>
-          <p>Стандартный сценарий приёмки: окна, стяжка, стены, инженерка. Ничего не забыто, даже если эксперт устал.</p>
+        <div class="world-card world-card-accent reveal">
+          <div class="world-head">
+            <span class="world-num mono">МИР 2 · ГОТОВО СРАЗУ</span>
+            <h3>Отчёты</h3>
+          </div>
+          <ul class="world-list world-docs">
+            <li><span class="doc-ico mono">PDF</span>Отчёт по&nbsp;дефектам — фото, нормативы, точки на&nbsp;плане</li>
+            <li><span class="doc-ico mono">ВОР</span>Ведомость объёмов работ — объёмы из&nbsp;замеров</li>
+            <li><span class="doc-ico mono">₽</span>Смета — материалы и&nbsp;работы по&nbsp;вашим расценкам</li>
+          </ul>
         </div>
       </div>
+      <p class="section-note reveal">Изменился замер — пересчитались объёмы, смета и&nbsp;все отчёты. Легко и&nbsp;быстро, без перебивки в&nbsp;Excel.</p>
     </div>
   </section>
 
@@ -206,6 +214,35 @@
     </div>
   </section>
 
+  <section class="boq" id="boq">
+    <div class="container boq-inner">
+      <div class="boq-copy">
+        <p class="eyebrow reveal">Ведомость объёмов работ</p>
+        <h2 class="reveal">ВОР строится прямо в&nbsp;приложении — из&nbsp;замеров</h2>
+        <p class="section-lead reveal">Каждому дефекту назначаются работы по&nbsp;его устранению, а&nbsp;объёмы берутся из&nbsp;геометрии плана. Ведомость готова к&nbsp;моменту, когда эксперт выходит из&nbsp;квартиры.</p>
+        <ul class="check-list">
+          <li class="reveal"><strong>Объёмы из&nbsp;геометрии.</strong> Площадь стены, периметр, длина примыкания — всё уже замерено дальномером. Ничего не&nbsp;считается на&nbsp;бумажке и&nbsp;не&nbsp;прикидывается «на&nbsp;глаз».</li>
+          <li class="reveal"><strong>Каждая позиция обоснована.</strong> Работа ссылается на&nbsp;дефект, дефект — на&nbsp;точку на&nbsp;плане и&nbsp;фото. Цепочка доказательств не&nbsp;рвётся.</li>
+          <li class="reveal"><strong>Живой пересчёт.</strong> Поправили замер — объёмы обновились во&nbsp;всей ведомости и&nbsp;дальше в&nbsp;смете.</li>
+        </ul>
+      </div>
+      <div class="boq-visual reveal" aria-hidden="true">
+        <div class="estimate-card">
+          <div class="estimate-head mono">ВЕДОМОСТЬ ОБЪЁМОВ РАБОТ · КВ. 214</div>
+          <div class="estimate-rows mono">
+            <div class="estimate-row"><span>Штукатурка стен, кухня-гостиная</span><span>48,6 м²</span><span>Д-03</span></div>
+            <div class="estimate-row"><span>Замена стеклопакета, спальня</span><span>1 шт</span><span>Д-07</span></div>
+            <div class="estimate-row"><span>Перекладка плитки пола, санузел</span><span>4,8 м²</span><span>Д-11</span></div>
+            <div class="estimate-row"><span>Ремонт стяжки, прихожая</span><span>6,2 м²</span><span>Д-14</span></div>
+            <div class="estimate-row"><span>Огрунтовка стен, кухня-гостиная</span><span>48,6 м²</span><span>Д-03</span></div>
+            <div class="estimate-row estimate-dim"><span>… ещё 13 позиций</span><span></span><span></span></div>
+          </div>
+          <div class="estimate-total"><span>18 позиций</span><strong class="mono">объёмы — из замеров</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="photos" id="photos">
     <div class="container">
       <p class="eyebrow reveal">Фотофиксация</p>
@@ -237,11 +274,11 @@
     <div class="container estimate-inner">
       <div class="estimate-copy">
         <p class="eyebrow reveal">Смета</p>
-        <h2 class="reveal">Смета устранения — из&nbsp;обмеров, а&nbsp;не&nbsp;из&nbsp;головы</h2>
-        <p class="section-lead reveal">Объёмы работ считаются из&nbsp;геометрии помещений и&nbsp;зафиксированных дефектов, расценки подставляются из&nbsp;прайс-листов вашей организации.</p>
+        <h2 class="reveal">Смета — это ВОР, умноженная на&nbsp;ваши расценки</h2>
+        <p class="section-lead reveal">Стоимость материалов и&nbsp;работ считается по&nbsp;позициям ведомости объёмов. Итог — обоснованная сумма для претензии или иска.</p>
         <ul class="check-list">
-          <li class="reveal"><strong>Обоснованная сумма иска.</strong> Каждая позиция сметы ссылается на&nbsp;конкретный дефект и&nbsp;обмер — оппоненту не&nbsp;к&nbsp;чему придраться.</li>
-          <li class="reveal"><strong>Живой пересчёт.</strong> Поправили обмер или исключили дефект — смета пересчиталась. Никаких «забыли поправить площадь в&nbsp;третьей таблице».</li>
+          <li class="reveal"><strong>Материалы и&nbsp;работы — раздельно.</strong> По&nbsp;каждой позиции видно, из&nbsp;чего складывается цена. Расценки — из&nbsp;прайс-листов вашей организации.</li>
+          <li class="reveal"><strong>Обоснованная сумма иска.</strong> Позиция сметы ссылается на&nbsp;ВОР, ВОР — на&nbsp;дефект и&nbsp;замер. Оппоненту не&nbsp;к&nbsp;чему придраться.</li>
           <li class="reveal"><strong>Готовый PDF.</strong> Наценки, налоги, итоги по&nbsp;группам затрат — документ формируется в&nbsp;один клик.</li>
         </ul>
       </div>
@@ -253,7 +290,9 @@
             <div class="estimate-row"><span>Замена стеклопакета</span><span>1 шт</span><span>18 900 ₽</span></div>
             <div class="estimate-row"><span>Перекладка плитки, санузел</span><span>6,2 м²</span><span>27 156 ₽</span></div>
             <div class="estimate-row"><span>Ремонт стяжки, прихожая</span><span>6,2 м²</span><span>14 880 ₽</span></div>
-            <div class="estimate-row estimate-dim"><span>… ещё 10 позиций</span><span></span><span></span></div>
+            <div class="estimate-row estimate-dim"><span>… ещё 14 позиций</span><span></span><span></span></div>
+            <div class="estimate-row estimate-sub"><span>Работы</span><span></span><span>148 210 ₽</span></div>
+            <div class="estimate-row estimate-sub"><span>Материалы</span><span></span><span>66 096 ₽</span></div>
           </div>
           <div class="estimate-total"><span>Итого с накладными</span><strong class="mono">214 306 ₽</strong></div>
         </div>
