@@ -3,26 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RMS — цифровая платформа для строительно-технической экспертизы</title>
-  <meta name="description" content="RMS автоматизирует экспертизу по ДДУ: обмеры с телефона, дефекты с привязкой к плану, сметы из обмеров и подготовка заключений." />
+  <title>RMS — платформа для экспертизы по ДДУ</title>
+  <meta name="description" content="RMS: осмотр квартиры, план с обмерами по лазерному дальномеру, дефекты с фото, смета устранения и материалы для заключения — из одного выезда на объект." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b1e33'/%3E%3Cpath d='M8 22V10h9a4 4 0 0 1 0 8h-5l6 4' stroke='%235cc8ff' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d4ed8'/%3E%3Cpath d='M8 22V10h9a4 4 0 0 1 0 8h-5l6 4' stroke='%23fff' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 </head>
 <body>
 
 <header class="site-header" id="top">
   <div class="container header-inner">
     <a class="logo" href="#top">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#0e2743"/><path d="M8 22V10h9a4 4 0 0 1 0 8h-5l6 4" stroke="#5cc8ff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1d4ed8"/><path d="M8 22V10h9a4 4 0 0 1 0 8h-5l6 4" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>RMS</span>
     </a>
     <nav class="site-nav">
-      <a href="#features">Возможности</a>
-      <a href="#workflow">Как это работает</a>
-      <a href="#firms">Для фирм</a>
+      <a href="#assessment">Осмотр</a>
+      <a href="#measure">Обмеры</a>
+      <a href="#photos">Фото</a>
+      <a href="#estimate">Смета</a>
+      <a href="#office">Поле → офис</a>
     </nav>
     <a class="btn btn-primary btn-sm" href="#cta">Запросить демо</a>
   </div>
@@ -33,222 +35,272 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">Платформа для строительно&#8209;технической экспертизы</p>
-        <h1>От осмотра до заключения — в&nbsp;одном цифровом контуре</h1>
-        <p class="lead">RMS автоматизирует экспертизу по&nbsp;ДДУ: план квартиры и&nbsp;дефекты фиксируются на&nbsp;осмотре с&nbsp;телефона, смета считается из&nbsp;обмеров, материалы дела готовы к&nbsp;заключению — без ручной перебивки данных.</p>
+        <p class="hero-tag">Платформа для экспертизы по&nbsp;ДДУ</p>
+        <h1>Всё дело по&nbsp;ДДУ — из&nbsp;одного выезда на&nbsp;объект</h1>
+        <p class="lead">Эксперт рисует план и&nbsp;фиксирует дефекты с&nbsp;телефона, дальномер сам передаёт размеры в&nbsp;чертёж, смета считается из&nbsp;обмеров. Офис получает готовые материалы дела — а&nbsp;не&nbsp;коробку с&nbsp;блокнотами и&nbsp;галерею из&nbsp;300&nbsp;фото.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#cta">Запросить демо</a>
-          <a class="btn btn-ghost" href="#workflow">Как это работает</a>
+          <a class="btn btn-ghost" href="#assessment">Как это работает</a>
         </div>
-        <ul class="hero-facts">
-          <li><span class="mono">01</span>Обмеры и дефекты — с телефона на объекте</li>
-          <li><span class="mono">02</span>Смета устранения — автоматически из обмеров</li>
-          <li><span class="mono">03</span>Данные дела в одном месте у всей команды</li>
-        </ul>
+        <p class="hero-note">Для экспертных организаций: приёмка новостроек и&nbsp;судебные споры по&nbsp;ДДУ</p>
       </div>
 
       <div class="hero-visual" aria-hidden="true">
         <div class="plan-card">
           <div class="plan-card-head">
-            <span class="mono">ОБЪЕКТ — КВ. 214</span>
+            <span class="mono">КВ. 214 · ЖК «ПРИМЕРНЫЙ»</span>
             <span class="plan-status mono">осмотр идёт</span>
           </div>
-          <svg class="plan" viewBox="0 0 560 460" fill="none">
+          <svg class="plan" viewBox="0 0 560 440" fill="none">
             <defs>
               <marker id="arr-s" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-                <path d="M1 1 L7 4 L1 7" stroke="#5f7fa3" stroke-width="1" fill="none"/>
+                <path d="M1 1 L7 4 L1 7" stroke="#94a3b8" stroke-width="1" fill="none"/>
               </marker>
               <marker id="arr-e" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
-                <path d="M1 1 L7 4 L1 7" stroke="#5f7fa3" stroke-width="1" fill="none"/>
+                <path d="M1 1 L7 4 L1 7" stroke="#94a3b8" stroke-width="1" fill="none"/>
               </marker>
             </defs>
 
             <g class="plan-grid">
-              <path d="M60 60 H520 M60 100 H520 M60 140 H520 M60 180 H520 M60 220 H520 M60 260 H520 M60 300 H520 M60 340 H520 M60 380 H520 M60 420 H520" />
-              <path d="M60 60 V420 M100 60 V420 M140 60 V420 M180 60 V420 M220 60 V420 M260 60 V420 M300 60 V420 M340 60 V420 M380 60 V420 M420 60 V420 M460 60 V420 M500 60 V420 M520 60 V420" />
+              <path d="M60 60 H520 M60 100 H520 M60 140 H520 M60 180 H520 M60 220 H520 M60 260 H520 M60 300 H520 M60 340 H520 M60 380 H520"/>
+              <path d="M60 60 V400 M100 60 V400 M140 60 V400 M180 60 V400 M220 60 V400 M260 60 V400 M300 60 V400 M340 60 V400 M380 60 V400 M420 60 V400 M460 60 V400 M500 60 V400"/>
             </g>
 
             <g class="walls">
-              <path d="M60 60 H520 V420 H60 Z" />
-              <path d="M320 60 V200 M320 240 V270" />
-              <path d="M60 270 H180 M220 270 H400 M440 270 H520" />
-              <path d="M200 270 V420" />
+              <path d="M60 60 H520 V400 H60 Z"/>
+              <path d="M320 60 V190 M320 230 V260"/>
+              <path d="M60 260 H180 M220 260 H400 M440 260 H520"/>
+              <path d="M200 260 V400"/>
             </g>
 
             <g class="rooms mono">
-              <text x="190" y="160">КУХНЯ-ГОСТИНАЯ</text>
-              <text x="185" y="180">18,4 м²</text>
-              <text x="420" y="160">СПАЛЬНЯ</text>
-              <text x="420" y="180">12,1 м²</text>
-              <text x="130" y="340">ПРИХОЖАЯ</text>
-              <text x="130" y="360">6,2 м²</text>
-              <text x="360" y="340">САНУЗЕЛ</text>
-              <text x="360" y="360">4,8 м²</text>
+              <text x="190" y="150">КУХНЯ-ГОСТИНАЯ</text>
+              <text x="185" y="170">18,4 м²</text>
+              <text x="420" y="210">СПАЛЬНЯ</text>
+              <text x="420" y="230">12,1 м²</text>
+              <text x="130" y="372">ПРИХОЖАЯ</text>
+              <text x="130" y="390">6,2 м²</text>
+              <text x="360" y="325">САНУЗЕЛ</text>
+              <text x="360" y="345">4,8 м²</text>
             </g>
 
             <g class="dims">
               <line x1="60" y1="36" x2="520" y2="36" marker-start="url(#arr-s)" marker-end="url(#arr-e)"/>
-              <line x1="60" y1="44" x2="60" y2="56" class="dim-tick"/>
-              <line x1="520" y1="44" x2="520" y2="56" class="dim-tick"/>
               <text class="mono" x="272" y="30">9 640</text>
+              <line x1="36" y1="60" x2="36" y2="400" marker-start="url(#arr-s)" marker-end="url(#arr-e)"/>
+              <text class="mono dim-v" x="30" y="234">7 560</text>
+            </g>
 
-              <line x1="36" y1="60" x2="36" y2="420" marker-start="url(#arr-s)" marker-end="url(#arr-e)"/>
-              <line x1="44" y1="60" x2="56" y2="60" class="dim-tick"/>
-              <line x1="44" y1="420" x2="56" y2="420" class="dim-tick"/>
-              <text class="mono dim-v" x="30" y="244">7 560</text>
-
-              <line x1="320" y1="88" x2="520" y2="88" marker-start="url(#arr-s)" marker-end="url(#arr-e)" class="dim-inner"/>
-              <text class="mono" x="404" y="82">4 180</text>
+            <g class="laser-dim">
+              <line class="laser-beam" x1="320" y1="88" x2="520" y2="88"/>
+              <circle class="laser-dot" cx="520" cy="88" r="4"/>
+              <rect x="368" y="70" width="104" height="26" rx="6" class="laser-chip"/>
+              <text class="mono laser-value" x="420" y="88">4 182 мм</text>
             </g>
 
             <g class="defect" transform="translate(392,120)">
               <circle class="defect-pulse" r="10"/>
               <circle class="defect-dot" r="5"/>
-              <line x1="8" y1="-8" x2="34" y2="-30"/>
-              <rect x="34" y="-46" width="64" height="24" rx="4"/>
-              <text class="mono" x="66" y="-30">Д-01</text>
+              <line x1="8" y1="8" x2="30" y2="28"/>
+              <rect x="30" y="28" width="64" height="24" rx="6"/>
+              <text class="mono" x="62" y="44">Д-01</text>
             </g>
 
             <g class="defect" transform="translate(120,290)">
               <circle class="defect-pulse" r="10"/>
               <circle class="defect-dot" r="5"/>
               <line x1="8" y1="8" x2="30" y2="28"/>
-              <rect x="30" y="28" width="64" height="24" rx="4"/>
+              <rect x="30" y="28" width="64" height="24" rx="6"/>
               <text class="mono" x="62" y="44">Д-02</text>
             </g>
-
-            <g class="defect" transform="translate(240,200)">
-              <circle class="defect-pulse" r="10"/>
-              <circle class="defect-dot" r="5"/>
-              <line x1="-8" y1="8" x2="-28" y2="26"/>
-              <rect x="-92" y="26" width="64" height="24" rx="4"/>
-              <text class="mono" x="-60" y="42">Д-03</text>
-            </g>
-
-            <line class="scanline" x1="60" y1="60" x2="60" y2="420"/>
           </svg>
           <div class="plan-card-foot">
-            <span class="chip mono">дефектов: 3</span>
-            <span class="chip mono">фото: 12</span>
+            <span class="chip mono">дефектов: 14</span>
+            <span class="chip mono">фото: 46</span>
             <span class="chip chip-accent mono">смета: 214 306 ₽</span>
           </div>
         </div>
+        <div class="float-card float-laser">
+          <span class="float-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="12" height="8" rx="2"/><path d="M15 12 H21" class="icon-accent"/><circle cx="21" cy="12" r="1.4" class="icon-accent-fill"/></svg>
+          </span>
+          <div>
+            <strong>Дальномер подключён</strong>
+            <span class="mono">размер → сразу в план</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="features" id="features">
+  <section class="strip">
+    <div class="container strip-inner">
+      <span>Приёмка от застройщика</span>
+      <span>Досудебная экспертиза</span>
+      <span>Судебная экспертиза</span>
+      <span>Гарантийные споры</span>
+    </div>
+  </section>
+
+  <section class="assessment" id="assessment">
     <div class="container">
-      <p class="eyebrow reveal">Что получает эксперт</p>
-      <h2 class="reveal">Три результата вместо трёх ручных этапов</h2>
-      <div class="feature-grid">
-
-        <article class="feature-card reveal">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="13" y="4" width="22" height="40" rx="4"/>
-              <path d="M18 14 H30 M18 20 H30 M18 26 H24"/>
-              <path d="M4 34 L13 34 M35 34 L44 34" class="icon-accent"/>
-              <path d="M6 31 L4 34 L6 37 M42 31 L44 34 L42 37" class="icon-accent"/>
-            </svg>
-          </div>
-          <h3>Обмеры — с телефона, без рулетки и бумаги</h3>
-          <p>Приложение строит план квартиры прямо на осмотре. Каждое фото дефекта привязано к конкретной стене — доказательная база собирается по ходу осмотра, а не разбирается вечером по памяти.</p>
-          <p class="feature-note">Работает без интернета: в новостройке без сети данные сохранятся и синхронизируются позже.</p>
-        </article>
-
-        <article class="feature-card reveal">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="6" y="6" width="36" height="36" rx="4"/>
-              <path d="M14 16 H34 M14 24 H26 M14 32 H22"/>
-              <path d="M30 30 L34 34 L42 24" class="icon-accent"/>
-            </svg>
-          </div>
-          <h3>Смета устранения — автоматически из обмеров</h3>
-          <p>Объёмы работ считаются из геометрии помещений, расценки подставляются из ваших прайс-листов. Наценки, налоги, итоги по группам затрат — и готовый PDF, к которому не придерётся оппонент.</p>
-          <p class="feature-note">Изменился обмер — смета пересчиталась. Никаких «забыли поправить площадь в третьей таблице».</p>
-        </article>
-
-        <article class="feature-card reveal">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M24 6 L28 16 L38 20 L28 24 L24 34 L20 24 L10 20 L20 16 Z"/>
-              <path d="M36 32 L38 37 L43 39 L38 41 L36 46 L34 41 L29 39 L34 37 Z" class="icon-accent"/>
-            </svg>
-          </div>
-          <div class="badge-row"><h3>ИИ берёт на себя рутину заключения</h3><span class="badge mono">скоро</span></div>
-          <p>Подбор формулировок и нормативов по типу дефекта, черновики разделов заключения из данных осмотра. Эксперт проверяет и подписывает — вместо того чтобы набирать текст с нуля.</p>
-          <p class="feature-note">Развивается вместе с платформой: данные осмотров уже структурированы так, чтобы ИИ работал на них.</p>
-        </article>
-
+      <p class="eyebrow reveal">Осмотр</p>
+      <h2 class="reveal">Один выезд — полностью задокументированное дело</h2>
+      <p class="section-lead reveal">Всё, что нужно для заключения по&nbsp;ДДУ, эксперт фиксирует по&nbsp;ходу осмотра. Ничего не&nbsp;разбирается вечером по&nbsp;памяти и&nbsp;не&nbsp;восстанавливается повторным выездом.</p>
+      <div class="pill-grid">
+        <div class="pill-card reveal">
+          <h3>Данные дела и объекта</h3>
+          <p>Дольщик, застройщик, адрес, реквизиты ДДУ — карточка дела заполняется один раз и тянется во все документы.</p>
+        </div>
+        <div class="pill-card reveal">
+          <h3>План и обмеры</h3>
+          <p>План квартиры рисуется на объекте, размеры прилетают с лазерного дальномера. Площади считаются сами.</p>
+        </div>
+        <div class="pill-card reveal">
+          <h3>Дефекты с привязкой</h3>
+          <p>Каждый дефект стоит на плане: помещение, стена, координата. Тип дефекта — из справочника с нормативами.</p>
+        </div>
+        <div class="pill-card reveal">
+          <h3>Фото и заметки</h3>
+          <p>Фото снимаются из карточки дефекта и привязываются к нему автоматически. Заметки — туда же.</p>
+        </div>
+        <div class="pill-card reveal">
+          <h3>Чек-лист осмотра</h3>
+          <p>Стандартный сценарий приёмки: окна, стяжка, стены, инженерка. Ничего не забыто, даже если эксперт устал.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="workflow" id="workflow">
+  <section class="measure" id="measure">
+    <div class="container measure-inner">
+      <div class="measure-visual reveal" aria-hidden="true">
+        <div class="measure-card">
+          <div class="measure-head mono">ОБМЕР · СТЕНА 3</div>
+          <svg viewBox="0 0 420 240" fill="none" class="measure-svg">
+            <g class="walls">
+              <path d="M40 40 H380 V200 H40 Z"/>
+            </g>
+            <line class="laser-beam" x1="40" y1="120" x2="380" y2="120"/>
+            <circle class="laser-dot" cx="380" cy="120" r="5"/>
+            <rect x="140" y="96" width="140" height="34" rx="8" class="laser-chip"/>
+            <text class="mono laser-value laser-value-big" x="210" y="118">4 182 мм</text>
+          </svg>
+          <div class="measure-foot">
+            <span class="chip mono">Bluetooth · дальномер</span>
+            <span class="chip chip-accent mono">размер принят ✓</span>
+          </div>
+        </div>
+      </div>
+      <div class="measure-copy">
+        <p class="eyebrow reveal">Обмеры и план</p>
+        <h2 class="reveal">Рисовать план быстрее, чем чертить от&nbsp;руки</h2>
+        <p class="section-lead reveal">Стены тянутся по&nbsp;сетке, углы сами получаются прямыми, типовые помещения ставятся в&nbsp;пару касаний. А&nbsp;размеры вообще не&nbsp;нужно вводить руками.</p>
+        <ul class="check-list">
+          <li class="reveal"><strong>Дальномер по&nbsp;Bluetooth.</strong> Навёл, нажал — размер уже стоит на&nbsp;нужной стене плана. Без бумажки, без диктовки, без перебивки в&nbsp;офисе.</li>
+          <li class="reveal"><strong>Точность прибора, а&nbsp;не&nbsp;почерка.</strong> Погрешность обмера равна погрешности дальномера — цифры в&nbsp;заключении не&nbsp;оспорить «ошибкой переноса».</li>
+          <li class="reveal"><strong>Площади и&nbsp;объёмы — сами.</strong> Изменили стену — пересчитались площади, периметры и&nbsp;всё, что на&nbsp;них завязано, включая смету.</li>
+          <li class="reveal"><strong>Работает офлайн.</strong> В&nbsp;новостройке без сети всё сохраняется на&nbsp;телефоне и&nbsp;синхронизируется, когда появится связь.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="photos" id="photos">
     <div class="container">
-      <p class="eyebrow reveal">Как это работает</p>
-      <h2 class="reveal">Один поток данных: осмотр → дефекты → смета → заключение</h2>
-      <div class="steps">
-        <div class="step reveal">
-          <span class="step-num mono">1</span>
-          <h3>Осмотр</h3>
-          <p>Эксперт на объекте строит план, фиксирует дефекты и фото с телефона. Всё привязано к помещениям и стенам.</p>
-        </div>
-        <div class="step reveal">
-          <span class="step-num mono">2</span>
-          <h3>Дефекты</h3>
-          <p>К моменту возвращения в офис материалы уже структурированы: локации, фото, обмерные данные — ничего не переносится вручную.</p>
-        </div>
-        <div class="step reveal">
-          <span class="step-num mono">3</span>
-          <h3>Смета</h3>
-          <p>Стоимость устранения недостатков считается из обмеров по вашим расценкам. Сумма для иска обоснована цифрами осмотра.</p>
-        </div>
-        <div class="step reveal">
-          <span class="step-num mono">4</span>
-          <h3>Заключение</h3>
-          <p>Документы собираются из данных дела: дефекты, нормативы, фото и смета уже связаны между собой.</p>
+      <p class="eyebrow reveal">Фотофиксация</p>
+      <h2 class="reveal">Фото, которые не&nbsp;теряются и&nbsp;не&nbsp;путаются</h2>
+      <p class="section-lead reveal">Никаких «свалок» из&nbsp;галереи и&nbsp;сортировки по&nbsp;вечерам. Каждый кадр снимается из&nbsp;карточки дефекта и&nbsp;уже знает, к&nbsp;какому помещению, стене и&nbsp;недостатку он&nbsp;относится.</p>
+      <div class="photo-grid">
+        <figure class="photo-tile reveal">
+          <div class="photo-mock photo-mock-a" aria-hidden="true"></div>
+          <figcaption><span class="tag mono">Д-03 · кухня</span>Отклонение стены от вертикали 8 мм</figcaption>
+        </figure>
+        <figure class="photo-tile reveal">
+          <div class="photo-mock photo-mock-b" aria-hidden="true"></div>
+          <figcaption><span class="tag mono">Д-07 · спальня</span>Царапины стеклопакета</figcaption>
+        </figure>
+        <figure class="photo-tile reveal">
+          <div class="photo-mock photo-mock-c" aria-hidden="true"></div>
+          <figcaption><span class="tag mono">Д-11 · санузел</span>Пустоты под плиткой</figcaption>
+        </figure>
+        <figure class="photo-tile reveal">
+          <div class="photo-mock photo-mock-d" aria-hidden="true"></div>
+          <figcaption><span class="tag mono">Д-14 · прихожая</span>Трещина стяжки пола</figcaption>
+        </figure>
+      </div>
+      <p class="section-note reveal">В заключение фото попадают с&nbsp;подписями и&nbsp;привязкой к&nbsp;плану автоматически — вместе с&nbsp;датой и&nbsp;временем съёмки, что важно для суда.</p>
+    </div>
+  </section>
+
+  <section class="estimate" id="estimate">
+    <div class="container estimate-inner">
+      <div class="estimate-copy">
+        <p class="eyebrow reveal">Смета</p>
+        <h2 class="reveal">Смета устранения — из&nbsp;обмеров, а&nbsp;не&nbsp;из&nbsp;головы</h2>
+        <p class="section-lead reveal">Объёмы работ считаются из&nbsp;геометрии помещений и&nbsp;зафиксированных дефектов, расценки подставляются из&nbsp;прайс-листов вашей организации.</p>
+        <ul class="check-list">
+          <li class="reveal"><strong>Обоснованная сумма иска.</strong> Каждая позиция сметы ссылается на&nbsp;конкретный дефект и&nbsp;обмер — оппоненту не&nbsp;к&nbsp;чему придраться.</li>
+          <li class="reveal"><strong>Живой пересчёт.</strong> Поправили обмер или исключили дефект — смета пересчиталась. Никаких «забыли поправить площадь в&nbsp;третьей таблице».</li>
+          <li class="reveal"><strong>Готовый PDF.</strong> Наценки, налоги, итоги по&nbsp;группам затрат — документ формируется в&nbsp;один клик.</li>
+        </ul>
+      </div>
+      <div class="estimate-visual reveal" aria-hidden="true">
+        <div class="estimate-card">
+          <div class="estimate-head mono">СМЕТА · КВ. 214</div>
+          <div class="estimate-rows mono">
+            <div class="estimate-row"><span>Выравнивание стен, кухня</span><span>18,4 м²</span><span>23 552 ₽</span></div>
+            <div class="estimate-row"><span>Замена стеклопакета</span><span>1 шт</span><span>18 900 ₽</span></div>
+            <div class="estimate-row"><span>Перекладка плитки, санузел</span><span>6,2 м²</span><span>27 156 ₽</span></div>
+            <div class="estimate-row"><span>Ремонт стяжки, прихожая</span><span>6,2 м²</span><span>14 880 ₽</span></div>
+            <div class="estimate-row estimate-dim"><span>… ещё 10 позиций</span><span></span><span></span></div>
+          </div>
+          <div class="estimate-total"><span>Итого с накладными</span><strong class="mono">214 306 ₽</strong></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="firms" id="firms">
-    <div class="container firms-inner">
-      <div class="firms-copy">
-        <p class="eyebrow reveal">Для экспертных организаций</p>
-        <h2 class="reveal">Больше дел — тем же составом</h2>
-        <p class="lead reveal">RMS — не блокнот эксперта, а рабочий контур фирмы: единый процесс для всей команды, видимость каждого дела и меньше зависимости от «незаменимых» сотрудников.</p>
-      </div>
-      <div class="firm-grid">
-        <div class="firm-card reveal">
-          <h3>Единый стандарт</h3>
-          <p>Все эксперты фиксируют осмотр одинаково. Качество материалов не зависит от того, кто выехал на объект.</p>
+  <section class="office" id="office">
+    <div class="container">
+      <p class="eyebrow reveal">Поле → офис</p>
+      <h2 class="reveal">Офис не&nbsp;пересобирает то, что эксперт уже увидел</h2>
+      <p class="section-lead reveal">Дело собирается там, где находится дефект, — на&nbsp;объекте. К&nbsp;моменту возвращения эксперта в&nbsp;офисе уже есть план, дефекты, фото и&nbsp;черновик сметы.</p>
+      <div class="office-grid">
+        <div class="office-card reveal">
+          <h3>Единый стандарт осмотра</h3>
+          <p>Все эксперты фиксируют одинаково. Качество материалов не зависит от того, кто выехал на объект.</p>
         </div>
-        <div class="firm-card reveal">
-          <h3>Прозрачность дел</h3>
-          <p>Руководитель видит статус каждого дела: что осмотрено, что посчитано, что готово к сдаче.</p>
+        <div class="office-card reveal">
+          <h3>Статусы всех дел</h3>
+          <p>Руководитель видит: что осмотрено, что посчитано, что готово к сдаче, где затык.</p>
         </div>
-        <div class="firm-card reveal">
-          <h3>Быстрый ввод новичков</h3>
-          <p>Процесс зашит в инструмент: новый эксперт работает по стандарту фирмы с первого выезда.</p>
+        <div class="office-card reveal">
+          <h3>Доказательная история</h3>
+          <p>У каждого фото и обмера есть дата, время и автор. В споре о достоверности материалов это аргумент.</p>
         </div>
-        <div class="firm-card reveal">
-          <h3>Скорость цикла</h3>
-          <p>Меньше ручных этапов между осмотром и заключением — короче срок сдачи и выше пропускная способность.</p>
+        <div class="office-card reveal">
+          <h3>Заключение из данных дела</h3>
+          <p>Дефекты, нормативы, фото и смета уже связаны — документ собирается, а не набирается с нуля.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container stats-inner">
+      <div class="stat reveal"><strong>1 выезд</strong><span>вместо повторных визитов на объект</span></div>
+      <div class="stat reveal"><strong>0 перебивок</strong><span>размеры и фото не переносятся вручную</span></div>
+      <div class="stat reveal"><strong>×2 дел</strong><span>тем же составом экспертов</span></div>
     </div>
   </section>
 
   <section class="cta" id="cta">
     <div class="container cta-inner reveal">
-      <h2>Покажем платформу на вашем процессе</h2>
-      <p class="lead">Расскажите, как устроена экспертиза у вас — покажем, какие этапы RMS заберёт на себя уже сейчас.</p>
+      <h2>Покажем платформу на&nbsp;вашем процессе</h2>
+      <p class="lead">Расскажите, как устроена экспертиза у&nbsp;вас, — покажем, какие этапы RMS заберёт на&nbsp;себя уже сейчас.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="mailto:hello@rms.example?subject=Демо%20RMS">Запросить демо</a>
+        <a class="btn btn-light" href="mailto:hello@rms.example?subject=Демо%20RMS">Запросить демо</a>
       </div>
       <p class="cta-note mono">ранний доступ · внедрение вместе с командой RMS</p>
     </div>
@@ -259,10 +311,10 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <a class="logo" href="#top">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#0e2743"/><path d="M8 22V10h9a4 4 0 0 1 0 8h-5l6 4" stroke="#5cc8ff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1d4ed8"/><path d="M8 22V10h9a4 4 0 0 1 0 8h-5l6 4" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>RMS</span>
     </a>
-    <p>Платформа для строительно-технической экспертизы · © 2026</p>
+    <p>Платформа для экспертизы по ДДУ · © 2026</p>
   </div>
 </footer>
 
