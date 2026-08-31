@@ -1,0 +1,10 @@
+{
+  "name": "planbee-landing",
+  "main": "./index.js",
+  "compatibility_date": "2026-08-31",
+  "assets": {
+    "directory": "..",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  }
+}

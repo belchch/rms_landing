@@ -3,360 +3,502 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RMS — платформа для экспертизы по ДДУ</title>
-  <meta name="description" content="RMS: лёгкие замеры лазерным дальномером — и готовые отчёты: ведомость объёмов работ, смета материалов и работ, отчёт по дефектам. Всё дело по ДДУ за один выезд." />
+  <title>planbee — замеры, ВОР и сметы в одном процессе</title>
+  <meta name="description" content="planbee помогает фиксировать замеры, фото и дефекты на объекте, а затем собирать ведомость объёмов работ и смету на компьютере — в одном связанном процессе." />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:title" content="planbee — измеряйте на объекте, считайте в офисе" />
+  <meta property="og:description" content="Замеры, фото, дефекты, ВОР и смета — в одном связанном процессе." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="planbee — измеряйте на объекте, считайте в офисе" />
+  <meta name="twitter:description" content="Замеры, фото, дефекты, ВОР и смета — в одном связанном процессе." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/planbee-logo-v2.png" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d4ed8'/%3E%3Cpath d='M8 22V10h9a4 4 0 0 1 0 8h-5l6 4' stroke='%23fff' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
 
-<header class="site-header" id="top">
-  <div class="container header-inner">
-    <a class="logo" href="#top">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1d4ed8"/><path d="M8 22V10h9a4 4 0 0 1 0 8h-5l6 4" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span>RMS</span>
-    </a>
-    <nav class="site-nav">
-      <a href="#worlds">Как это работает</a>
-      <a href="#measure">Замеры</a>
-      <a href="#boq">Объёмы работ</a>
-      <a href="#estimate">Смета</a>
-      <a href="#photos">Фото</a>
-    </nav>
-    <a class="btn btn-primary btn-sm" href="#cta">Запросить демо</a>
-  </div>
-</header>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand-lockup" href="#top" aria-label="planbee — на главную">
+        <img src="img/planbee-logo-v2.png" alt="planbee" />
+      </a>
 
-<main>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="#field">В поле</a>
+        <a href="#desktop">На компьютере</a>
+        <a href="#flow">Как работает</a>
+      </nav>
 
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <p class="hero-tag">Платформа для экспертизы по&nbsp;ДДУ</p>
-        <h1>Лёгкие замеры — и&nbsp;все отчёты готовы</h1>
-        <p class="lead">Эксперт замеряет квартиру дальномером и&nbsp;отмечает дефекты на&nbsp;плане. Ведомость объёмов работ, смета и&nbsp;отчёт по&nbsp;дефектам строятся из&nbsp;замеров сами — дело по&nbsp;ДДУ собирается за&nbsp;один выезд.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#cta">Запросить демо</a>
-          <a class="btn btn-ghost" href="#worlds">Как это работает</a>
+      <a class="btn btn-primary btn-sm header-cta" href="#cta">Запросить демо</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Один объект. Два рабочих пространства.</p>
+          <h1>Измеряйте на&nbsp;объекте. Считайте в&nbsp;офисе.</h1>
+          <p class="lead">planbee связывает мобильные замеры, фото и&nbsp;дефекты с&nbsp;ВОР и&nbsp;сметой на&nbsp;компьютере. Всё, что команда собрала в&nbsp;поле, остаётся в&nbsp;контексте объекта и&nbsp;готово к&nbsp;расчёту.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-honey" href="#cta">Запросить демонстрацию</a>
+            <a class="text-link" href="#flow">
+              Посмотреть, как работает
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-4 4 4-4 4"/></svg>
+            </a>
+          </div>
+
+          <p class="hero-note">Для строительных экспертов, инженеров и&nbsp;сметчиков.</p>
         </div>
-        <p class="hero-note">Для экспертных организаций: приёмка новостроек и&nbsp;судебные споры по&nbsp;ДДУ</p>
+
+        <div class="hero-product" aria-label="Демонстрация связи мобильного приложения и компьютерной версии planbee">
+          <div class="demo-caption mono">
+            <span>ДЕМО-ОБЪЕКТ · КВ. 214</span>
+            <span class="sync-state"><i></i> данные связаны</span>
+          </div>
+
+          <div class="product-stage">
+            <div class="phone-preview">
+              <div class="phone-speaker"></div>
+              <div class="phone-screen">
+                <div class="preview-topbar">
+                  <span class="mono">ОСМОТР</span>
+                  <span class="status-pill">в поле</span>
+                </div>
+                <div class="preview-plan">
+                  <svg viewBox="0 0 220 188" role="img" aria-label="План помещения с замером и отметкой дефекта">
+                    <path class="plan-gridline" d="M20 30h180M20 70h180M20 110h180M20 150h180M50 14v160M90 14v160M130 14v160M170 14v160"/>
+                    <path class="plan-wall" d="M30 24h160v142H30zM116 24v55M116 104v62M30 108h49M102 108h88"/>
+                    <path class="plan-door" d="M78 108v-23a23 23 0 0 1 23 23"/>
+                    <path class="measure-line" d="M42 58h64"/>
+                    <circle class="measure-point" cx="42" cy="58" r="3"/>
+                    <circle class="measure-point" cx="106" cy="58" r="3"/>
+                    <rect class="measure-label" x="49" y="43" width="50" height="22" rx="7"/>
+                    <text class="mono measure-text" x="74" y="58">4 182</text>
+                    <circle class="defect-pin-ring" cx="151" cy="78" r="10"/>
+                    <circle class="defect-pin" cx="151" cy="78" r="4"/>
+                    <text class="mono room-name" x="72" y="138">КУХНЯ</text>
+                    <text class="mono room-name" x="151" y="138">СПАЛЬНЯ</text>
+                  </svg>
+                </div>
+                <div class="defect-mini">
+                  <div class="defect-thumb">
+                    <img src="img/defect-glass.jpg" alt="" />
+                  </div>
+                  <div>
+                    <span class="mono">Д-07 · СПАЛЬНЯ</span>
+                    <strong>Царапина на стеклопакете</strong>
+                  </div>
+                  <b>3 фото</b>
+                </div>
+              </div>
+            </div>
+
+            <svg class="data-route" viewBox="0 0 280 110" aria-hidden="true">
+              <path d="M8 80C74 80 72 22 139 22s64 58 133 58"/>
+              <circle cx="8" cy="80" r="5"/>
+              <circle cx="272" cy="80" r="7"/>
+            </svg>
+
+            <div class="desktop-preview">
+              <div class="desktop-bar">
+                <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <span class="mono">ОБЪЕКТ 214</span>
+                <span class="desktop-user"></span>
+              </div>
+              <div class="desktop-body">
+                <div class="desktop-sidebar" aria-hidden="true">
+                  <span class="is-active"></span><span></span><span></span><span></span>
+                </div>
+                <div class="desktop-workspace">
+                  <div class="desktop-title">
+                    <div>
+                      <span class="mono">РАСЧЁТ</span>
+                      <strong>Ведомость объёмов работ</strong>
+                    </div>
+                    <button type="button" tabindex="-1">Экспорт</button>
+                  </div>
+                  <div class="demo-tabs">
+                    <span class="is-active">ВОР</span>
+                    <span>Смета</span>
+                  </div>
+                  <div class="demo-table mono">
+                    <div class="demo-row demo-head"><span>Работа</span><span>Объём</span><span>Источник</span></div>
+                    <div class="demo-row"><span>Выравнивание стен</span><span>48,6 м²</span><span>Д-03</span></div>
+                    <div class="demo-row"><span>Замена стеклопакета</span><span>1 шт</span><span>Д-07</span></div>
+                    <div class="demo-row"><span>Ремонт стяжки</span><span>6,2 м²</span><span>Д-14</span></div>
+                  </div>
+                  <div class="demo-total">
+                    <span>18 позиций в ВОР</span>
+                    <strong class="mono">214 306 ₽</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-legend">
+            <span><i class="legend-mobile"></i>В поле: замеры · фото · дефекты</span>
+            <span><i class="legend-desktop"></i>В офисе: ВОР · смета</span>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="hero-visual" aria-hidden="true">
-        <div class="plan-card">
-          <div class="plan-card-head">
-            <span class="mono">КВ. 214 · ЖК «ПРИМЕРНЫЙ»</span>
-            <span class="plan-status mono">осмотр идёт</span>
-          </div>
-          <svg class="plan" viewBox="0 0 560 440" fill="none">
-            <defs>
-              <marker id="arr-s" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-                <path d="M1 1 L7 4 L1 7" stroke="#94a3b8" stroke-width="1" fill="none"/>
-              </marker>
-              <marker id="arr-e" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
-                <path d="M1 1 L7 4 L1 7" stroke="#94a3b8" stroke-width="1" fill="none"/>
-              </marker>
-            </defs>
+    <section class="signal-strip" aria-label="Возможности planbee">
+      <div class="container signal-inner mono">
+        <span>Замеры</span><i></i><span>Фото</span><i></i><span>Дефекты</span><i></i><span>ВОР</span><i></i><span>Смета</span>
+      </div>
+    </section>
 
-            <g class="plan-grid">
-              <path d="M60 60 H520 M60 100 H520 M60 140 H520 M60 180 H520 M60 220 H520 M60 260 H520 M60 300 H520 M60 340 H520 M60 380 H520"/>
-              <path d="M60 60 V400 M100 60 V400 M140 60 V400 M180 60 V400 M220 60 V400 M260 60 V400 M300 60 V400 M340 60 V400 M380 60 V400 M420 60 V400 M460 60 V400 M500 60 V400"/>
-            </g>
+    <section class="pillars" id="product">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Как устроен planbee</p>
+          <h2>Два рабочих пространства.<br />Один связанный процесс.</h2>
+          <p class="section-lead">На объекте важна скорость фиксации. В&nbsp;офисе — точность расчёта. planbee сохраняет связь между ними.</p>
+        </div>
 
-            <g class="walls">
-              <path d="M60 60 H520 V400 H60 Z"/>
-              <path d="M320 60 V190 M320 230 V260"/>
-              <path d="M60 260 H180 M220 260 H400 M440 260 H520"/>
-              <path d="M200 260 V400"/>
-            </g>
+        <div class="pillar-grid">
+          <article class="pillar-card pillar-field reveal">
+            <div class="pillar-top">
+              <span class="pillar-number mono">01 · МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</span>
+              <span class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 5h4M11 18.5h2"/></svg>
+              </span>
+            </div>
+            <h3>В поле — замерить<br />и&nbsp;зафиксировать</h3>
+            <p>Собирайте данные осмотра там, где они появляются: на объекте, с&nbsp;телефона.</p>
+            <ul class="feature-list">
+              <li>Замеры и геометрия помещения</li>
+              <li>Фото прямо из карточки дефекта</li>
+              <li>Привязка замечания к месту</li>
+            </ul>
+            <p class="pillar-outcome"><span>На выходе</span> Объект с&nbsp;планом, размерами, фото и&nbsp;дефектами.</p>
+          </article>
 
-            <g class="rooms mono">
-              <text x="190" y="150">КУХНЯ-ГОСТИНАЯ</text>
-              <text x="185" y="170">18,4 м²</text>
-              <text x="420" y="210">СПАЛЬНЯ</text>
-              <text x="420" y="230">12,1 м²</text>
-              <text x="130" y="372">ПРИХОЖАЯ</text>
-              <text x="130" y="390">6,2 м²</text>
-              <text x="360" y="325">САНУЗЕЛ</text>
-              <text x="360" y="345">4,8 м²</text>
-            </g>
+          <article class="pillar-card pillar-office reveal">
+            <div class="pillar-top">
+              <span class="pillar-number mono">02 · КОМПЬЮТЕР</span>
+              <span class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="13" rx="2.5"/><path d="M8 21h8M12 17v4"/></svg>
+              </span>
+            </div>
+            <h3>В офисе — собрать<br />ВОР и&nbsp;смету</h3>
+            <p>Откройте тот же объект на большом экране и&nbsp;превратите полевые данные в&nbsp;понятный расчёт.</p>
+            <ul class="feature-list">
+              <li>ВОР на основе фактических замеров</li>
+              <li>Расценки на материалы и работы</li>
+              <li>Проверка объёмов и итоговой суммы</li>
+            </ul>
+            <p class="pillar-outcome"><span>На выходе</span> ВОР и&nbsp;смета, которые легко проверить и&nbsp;скорректировать.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            <g class="dims">
-              <line x1="60" y1="36" x2="520" y2="36" marker-start="url(#arr-s)" marker-end="url(#arr-e)"/>
-              <text class="mono" x="272" y="30">9 640</text>
-              <line x1="36" y1="60" x2="36" y2="400" marker-start="url(#arr-s)" marker-end="url(#arr-e)"/>
-              <text class="mono dim-v" x="30" y="234">7 560</text>
-            </g>
+    <section class="field-section" id="field">
+      <div class="container field-grid">
+        <div class="field-copy">
+          <p class="eyebrow reveal">В поле</p>
+          <h2 class="reveal">Всё важное фиксируется на&nbsp;месте</h2>
+          <p class="section-lead reveal">Размеры, фотографии и&nbsp;описание дефекта сразу попадают в&nbsp;структуру объекта — без разрозненных заметок и&nbsp;вечерней сортировки галереи.</p>
 
-            <g class="laser-dim">
-              <line class="laser-beam" x1="320" y1="88" x2="520" y2="88"/>
-              <circle class="laser-dot" cx="520" cy="88" r="4"/>
-              <rect x="368" y="70" width="104" height="26" rx="6" class="laser-chip"/>
-              <text class="mono laser-value" x="420" y="88">4 182 мм</text>
-            </g>
-
-            <g class="defect" transform="translate(392,120)">
-              <circle class="defect-pulse" r="10"/>
-              <circle class="defect-dot" r="5"/>
-              <line x1="8" y1="8" x2="30" y2="28"/>
-              <rect x="30" y="28" width="64" height="24" rx="6"/>
-              <text class="mono" x="62" y="44">Д-01</text>
-            </g>
-
-            <g class="defect" transform="translate(120,290)">
-              <circle class="defect-pulse" r="10"/>
-              <circle class="defect-dot" r="5"/>
-              <line x1="8" y1="8" x2="30" y2="28"/>
-              <rect x="30" y="28" width="64" height="24" rx="6"/>
-              <text class="mono" x="62" y="44">Д-02</text>
-            </g>
-          </svg>
-          <div class="plan-card-foot">
-            <span class="chip mono">дефектов: 14</span>
-            <span class="chip mono">ВОР: 18 позиций</span>
-            <span class="chip chip-accent mono">смета: 214 306 ₽</span>
+          <div class="feature-stack">
+            <article class="feature-item reveal">
+              <span class="feature-index mono">01</span>
+              <div>
+                <h3>Замеры в контексте</h3>
+                <p>Фиксируйте размеры там, где они относятся к&nbsp;плану и&nbsp;помещению. Значение с&nbsp;дальномера можно сразу сохранить в&nbsp;модель.</p>
+              </div>
+            </article>
+            <article class="feature-item reveal">
+              <span class="feature-index mono">02</span>
+              <div>
+                <h3>Фото из карточки дефекта</h3>
+                <p>Снимок сразу связан с&nbsp;замечанием и&nbsp;его расположением — не нужно искать нужный кадр среди десятков похожих.</p>
+              </div>
+            </article>
+            <article class="feature-item reveal">
+              <span class="feature-index mono">03</span>
+              <div>
+                <h3>Структурированная дефектовка</h3>
+                <p>Описание, место, фото и&nbsp;комментарий хранятся вместе и&nbsp;доступны всей команде.</p>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="float-card float-laser">
-          <span class="float-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="12" height="8" rx="2"/><path d="M15 12 H21" class="icon-accent"/><circle cx="21" cy="12" r="1.4" class="icon-accent-fill"/></svg>
-          </span>
+
+        <div class="field-visual reveal">
+          <div class="phone-large">
+            <div class="phone-large-top">
+              <span class="mono">КВ. 214 · СПАЛЬНЯ</span>
+              <span class="live-badge">осмотр</span>
+            </div>
+            <div class="measurement-card">
+              <div class="measurement-title">
+                <span>Стена 3</span>
+                <span class="mono live-measure">4 182 мм</span>
+              </div>
+              <svg viewBox="0 0 320 190" role="img" aria-label="Замер стены на плане помещения">
+                <path class="field-gridline" d="M20 35h280M20 75h280M20 115h280M20 155h280M55 18v154M105 18v154M155 18v154M205 18v154M255 18v154"/>
+                <path class="field-wall" d="M42 30h236v132H42zM182 30v56M182 110v52"/>
+                <path class="field-laser" d="M55 68h114"/>
+                <circle class="field-laser-dot" cx="169" cy="68" r="5"/>
+                <rect class="field-value-bg" x="78" y="49" width="72" height="28" rx="8"/>
+                <text class="mono field-value live-measure" x="114" y="68">4 182 мм</text>
+                <circle class="field-defect-ring" cx="226" cy="122" r="13"/>
+                <circle class="field-defect" cx="226" cy="122" r="5"/>
+              </svg>
+              <div class="measurement-actions">
+                <span class="device-chip mono">BLUETOOTH · ДАЛЬНОМЕР</span>
+                <span class="accepted-chip">размер принят ✓</span>
+              </div>
+            </div>
+            <div class="phone-nav" aria-hidden="true"><i></i><i class="is-active"></i><i></i></div>
+          </div>
+
+          <div class="photo-proof">
+            <figure class="proof-card proof-card-main">
+              <img src="img/defect-wall.jpg" alt="Фиксация отклонения стены от вертикали" />
+              <figcaption><span class="mono">Д-03 · КУХНЯ</span>Отклонение стены</figcaption>
+            </figure>
+            <figure class="proof-card">
+              <img src="img/defect-tile.jpg" alt="Фиксация пустот под плиткой" loading="lazy" />
+              <figcaption><span class="mono">Д-11 · САНУЗЕЛ</span>Пустоты под плиткой</figcaption>
+            </figure>
+            <figure class="proof-card">
+              <img src="img/defect-screed.jpg" alt="Фиксация трещины стяжки" loading="lazy" />
+              <figcaption><span class="mono">Д-14 · ПРИХОЖАЯ</span>Трещина стяжки</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="field-benefit reveal"><strong>Меньше потерянного контекста.</strong> Меньше повторной ручной работы после выезда.</p>
+      </div>
+    </section>
+
+    <section class="flow-section" id="flow">
+      <div class="container">
+        <div class="flow-heading reveal">
           <div>
-            <strong>Дальномер подключён</strong>
-            <span class="mono">размер → сразу в план</span>
+            <p class="eyebrow">От поля к расчёту</p>
+            <h2>Один маршрут —<br />от факта до стоимости</h2>
           </div>
+          <p class="section-lead">Данные не начинают новую жизнь в&nbsp;каждой таблице — они продолжают один и&nbsp;тот же объект.</p>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="strip">
-    <div class="container strip-inner">
-      <span>Приёмка от застройщика</span>
-      <span>Досудебная экспертиза</span>
-      <span>Судебная экспертиза</span>
-      <span>Гарантийные споры</span>
-    </div>
-  </section>
-
-  <section class="worlds" id="worlds">
-    <div class="container">
-      <p class="eyebrow reveal">Два мира</p>
-      <h2 class="reveal">Эксперт делает замеры — отчёты появляются сами</h2>
-      <p class="section-lead reveal">У эксперта один мир — объект: план, замеры, дефекты, фото. Второй мир — документы: ведомость объёмов, смета и&nbsp;отчёты. Между ними нет ручного труда.</p>
-      <div class="worlds-grid">
-        <div class="world-card reveal">
-          <div class="world-head">
-            <span class="world-num mono">МИР 1 · НА ОБЪЕКТЕ</span>
-            <h3>Замеры</h3>
-          </div>
-          <ul class="world-list">
-            <li>План квартиры — размеры прилетают с&nbsp;дальномера</li>
-            <li>Дефекты с&nbsp;привязкой к&nbsp;помещению и&nbsp;стене</li>
-            <li>Фото к&nbsp;каждому дефекту, с&nbsp;датой и&nbsp;временем</li>
-            <li>Чек-лист осмотра — ничего не&nbsp;забыто</li>
-          </ul>
-        </div>
-        <div class="worlds-arrow reveal" aria-hidden="true">
-          <svg viewBox="0 0 48 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 H42 M34 4 L42 12 L34 20"/></svg>
-          <span class="mono">автоматически</span>
-        </div>
-        <div class="world-card world-card-accent reveal">
-          <div class="world-head">
-            <span class="world-num mono">МИР 2 · ГОТОВО СРАЗУ</span>
-            <h3>Отчёты</h3>
-          </div>
-          <ul class="world-list world-docs">
-            <li><span class="doc-ico mono">PDF</span>Отчёт по&nbsp;дефектам — фото, нормативы, точки на&nbsp;плане</li>
-            <li><span class="doc-ico mono">ВОР</span>Ведомость объёмов работ — объёмы из&nbsp;замеров</li>
-            <li><span class="doc-ico mono">₽</span>Смета — материалы и&nbsp;работы по&nbsp;вашим расценкам</li>
-          </ul>
-        </div>
-      </div>
-      <p class="section-note reveal">Изменился замер — пересчитались объёмы, смета и&nbsp;все отчёты. Легко и&nbsp;быстро, без перебивки в&nbsp;Excel.</p>
-    </div>
-  </section>
-
-  <section class="measure" id="measure">
-    <div class="container measure-inner">
-      <div class="measure-visual reveal" aria-hidden="true">
-        <div class="measure-card">
-          <div class="measure-head mono">ОБМЕР · СТЕНА 3</div>
-          <svg viewBox="0 0 420 240" fill="none" class="measure-svg">
-            <g class="walls">
-              <path d="M40 40 H380 V200 H40 Z"/>
-            </g>
-            <line class="laser-beam" x1="40" y1="120" x2="380" y2="120"/>
-            <circle class="laser-dot" cx="380" cy="120" r="5"/>
-            <rect x="140" y="96" width="140" height="34" rx="8" class="laser-chip"/>
-            <text class="mono laser-value laser-value-big" x="210" y="118">4 182 мм</text>
+        <div class="flow-track reveal">
+          <svg class="flow-route" viewBox="0 0 1060 120" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M40 58C150 8 250 108 360 58S570 8 680 58s210 50 340 0"/>
           </svg>
-          <div class="measure-foot">
-            <span class="chip mono">Bluetooth · дальномер</span>
-            <span class="chip chip-accent mono">размер принят ✓</span>
+          <ol class="flow-steps">
+            <li>
+              <span class="flow-dot">1</span>
+              <strong>Измерьте</strong>
+              <p>Соберите габариты и&nbsp;геометрию помещения.</p>
+            </li>
+            <li>
+              <span class="flow-dot">2</span>
+              <strong>Зафиксируйте</strong>
+              <p>Добавьте дефект, место и&nbsp;подтверждающие фото.</p>
+            </li>
+            <li>
+              <span class="flow-dot">3</span>
+              <strong>Соберите ВОР</strong>
+              <p>Определите необходимые работы и&nbsp;их объёмы.</p>
+            </li>
+            <li>
+              <span class="flow-dot">4</span>
+              <strong>Рассчитайте смету</strong>
+              <p>Добавьте расценки и&nbsp;получите итог.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="desktop-section" id="desktop">
+      <div class="container desktop-grid">
+        <div class="desktop-copy">
+          <p class="eyebrow reveal">На компьютере</p>
+          <h2 class="reveal">Из полевых данных —<br />в&nbsp;ВОР и&nbsp;смету</h2>
+          <p class="section-lead reveal">Работайте с&nbsp;объектом на&nbsp;большом экране: проверяйте замеры, формируйте ведомость объёмов работ и&nbsp;рассчитывайте стоимость.</p>
+
+          <div class="desktop-features">
+            <article class="desktop-feature reveal">
+              <h3>ВОР из фактических данных</h3>
+              <p>Используйте замеры объекта, чтобы определить объёмы по&nbsp;выбранным работам.</p>
+            </article>
+            <article class="desktop-feature reveal">
+              <h3>Материалы и работы</h3>
+              <p>Настраивайте позиции и&nbsp;расценки, разделяйте затраты и&nbsp;контролируйте итог.</p>
+            </article>
+            <article class="desktop-feature reveal">
+              <h3>Прозрачный расчёт</h3>
+              <p>От итоговой суммы можно вернуться к&nbsp;работе, объёму и&nbsp;исходному факту на&nbsp;объекте.</p>
+            </article>
           </div>
         </div>
-      </div>
-      <div class="measure-copy">
-        <p class="eyebrow reveal">Обмеры и план</p>
-        <h2 class="reveal">Рисовать план быстрее, чем чертить от&nbsp;руки</h2>
-        <p class="section-lead reveal">Стены тянутся по&nbsp;сетке, углы сами получаются прямыми, типовые помещения ставятся в&nbsp;пару касаний. А&nbsp;размеры вообще не&nbsp;нужно вводить руками.</p>
-        <ul class="check-list">
-          <li class="reveal"><strong>Дальномер по&nbsp;Bluetooth.</strong> Навёл, нажал — размер уже стоит на&nbsp;нужной стене плана. Без бумажки, без диктовки, без перебивки в&nbsp;офисе.</li>
-          <li class="reveal"><strong>Точность прибора, а&nbsp;не&nbsp;почерка.</strong> Погрешность обмера равна погрешности дальномера — цифры в&nbsp;заключении не&nbsp;оспорить «ошибкой переноса».</li>
-          <li class="reveal"><strong>Площади и&nbsp;объёмы — сами.</strong> Изменили стену — пересчитались площади, периметры и&nbsp;всё, что на&nbsp;них завязано, включая смету.</li>
-          <li class="reveal"><strong>Работает офлайн.</strong> В&nbsp;новостройке без сети всё сохраняется на&nbsp;телефоне и&nbsp;синхронизируется, когда появится связь.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
-  <section class="boq" id="boq">
-    <div class="container boq-inner">
-      <div class="boq-copy">
-        <p class="eyebrow reveal">Ведомость объёмов работ</p>
-        <h2 class="reveal">ВОР строится прямо в&nbsp;приложении — из&nbsp;замеров</h2>
-        <p class="section-lead reveal">Каждому дефекту назначаются работы по&nbsp;его устранению, а&nbsp;объёмы берутся из&nbsp;геометрии плана. Ведомость готова к&nbsp;моменту, когда эксперт выходит из&nbsp;квартиры.</p>
-        <ul class="check-list">
-          <li class="reveal"><strong>Объёмы из&nbsp;геометрии.</strong> Площадь стены, периметр, длина примыкания — всё уже замерено дальномером. Ничего не&nbsp;считается на&nbsp;бумажке и&nbsp;не&nbsp;прикидывается «на&nbsp;глаз».</li>
-          <li class="reveal"><strong>Каждая позиция обоснована.</strong> Работа ссылается на&nbsp;дефект, дефект — на&nbsp;точку на&nbsp;плане и&nbsp;фото. Цепочка доказательств не&nbsp;рвётся.</li>
-          <li class="reveal"><strong>Живой пересчёт.</strong> Поправили замер — объёмы обновились во&nbsp;всей ведомости и&nbsp;дальше в&nbsp;смете.</li>
-        </ul>
-      </div>
-      <div class="boq-visual reveal" aria-hidden="true">
-        <div class="estimate-card">
-          <div class="estimate-head mono">ВЕДОМОСТЬ ОБЪЁМОВ РАБОТ · КВ. 214</div>
-          <div class="estimate-rows mono">
-            <div class="estimate-row"><span>Штукатурка стен, кухня-гостиная</span><span>48,6 м²</span><span>Д-03</span></div>
-            <div class="estimate-row"><span>Замена стеклопакета, спальня</span><span>1 шт</span><span>Д-07</span></div>
-            <div class="estimate-row"><span>Перекладка плитки пола, санузел</span><span>4,8 м²</span><span>Д-11</span></div>
-            <div class="estimate-row"><span>Ремонт стяжки, прихожая</span><span>6,2 м²</span><span>Д-14</span></div>
-            <div class="estimate-row"><span>Огрунтовка стен, кухня-гостиная</span><span>48,6 м²</span><span>Д-03</span></div>
-            <div class="estimate-row estimate-dim"><span>… ещё 13 позиций</span><span></span><span></span></div>
+        <div class="workspace-card reveal">
+          <div class="workspace-browser">
+            <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="mono">planbee · объект 214</span>
+            <span class="workspace-avatar">АП</span>
           </div>
-          <div class="estimate-total"><span>18 позиций</span><strong class="mono">объёмы — из замеров</strong></div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <div class="workspace-layout">
+            <aside class="workspace-nav" aria-label="Разделы демонстрационного объекта">
+              <span class="nav-logo">p</span>
+              <span class="nav-line is-active"></span>
+              <span class="nav-line"></span>
+              <span class="nav-line"></span>
+              <span class="nav-line"></span>
+            </aside>
+            <div class="workspace-main">
+              <div class="workspace-heading">
+                <div>
+                  <span class="mono">ЖК «ПРИМЕРНЫЙ» · КВ. 214</span>
+                  <h3>Расчёт по объекту</h3>
+                </div>
+                <span class="workspace-status">черновик</span>
+              </div>
 
-  <section class="photos" id="photos">
-    <div class="container">
-      <p class="eyebrow reveal">Фотофиксация</p>
-      <h2 class="reveal">Фото, которые не&nbsp;теряются и&nbsp;не&nbsp;путаются</h2>
-      <p class="section-lead reveal">Никаких «свалок» из&nbsp;галереи и&nbsp;сортировки по&nbsp;вечерам. Каждый кадр снимается из&nbsp;карточки дефекта и&nbsp;уже знает, к&nbsp;какому помещению, стене и&nbsp;недостатку он&nbsp;относится.</p>
-      <div class="photo-grid">
-        <figure class="photo-tile reveal">
-          <img src="img/defect-wall.jpg" alt="Правило у стены: отклонение от вертикали" loading="lazy" />
-          <figcaption><span class="tag mono">Д-03 · кухня</span>Отклонение стены от вертикали 15 мм</figcaption>
-        </figure>
-        <figure class="photo-tile reveal">
-          <img src="img/defect-glass.jpg" alt="Царапины на стеклопакете" loading="lazy" />
-          <figcaption><span class="tag mono">Д-07 · спальня</span>Царапины стеклопакета</figcaption>
-        </figure>
-        <figure class="photo-tile reveal">
-          <img src="img/defect-tile.jpg" alt="Плитка с отметкой пустоты и простукивание" loading="lazy" />
-          <figcaption><span class="tag mono">Д-11 · санузел</span>Пустоты под плиткой</figcaption>
-        </figure>
-        <figure class="photo-tile reveal">
-          <img src="img/defect-screed.jpg" alt="Трещина в стяжке пола" loading="lazy" />
-          <figcaption><span class="tag mono">Д-14 · прихожая</span>Трещина стяжки пола</figcaption>
-        </figure>
-      </div>
-      <p class="section-note reveal">В заключение фото попадают с&nbsp;подписями и&nbsp;привязкой к&nbsp;плану автоматически — вместе с&nbsp;датой и&nbsp;временем съёмки, что важно для суда.</p>
-    </div>
-  </section>
+              <div class="estimate-tabs" role="tablist" aria-label="Вид расчёта">
+                <button class="estimate-tab is-active" id="tab-vor" type="button" role="tab" aria-selected="true" aria-controls="panel-vor" data-estimate-tab="vor">Ведомость работ</button>
+                <button class="estimate-tab" id="tab-estimate" type="button" role="tab" aria-selected="false" aria-controls="panel-estimate" data-estimate-tab="estimate">Смета</button>
+              </div>
 
-  <section class="estimate" id="estimate">
-    <div class="container estimate-inner">
-      <div class="estimate-copy">
-        <p class="eyebrow reveal">Смета</p>
-        <h2 class="reveal">Смета — это ВОР, умноженная на&nbsp;ваши расценки</h2>
-        <p class="section-lead reveal">Стоимость материалов и&nbsp;работ считается по&nbsp;позициям ведомости объёмов. Итог — обоснованная сумма для претензии или иска.</p>
-        <ul class="check-list">
-          <li class="reveal"><strong>Материалы и&nbsp;работы — раздельно.</strong> По&nbsp;каждой позиции видно, из&nbsp;чего складывается цена. Расценки — из&nbsp;прайс-листов вашей организации.</li>
-          <li class="reveal"><strong>Обоснованная сумма иска.</strong> Позиция сметы ссылается на&nbsp;ВОР, ВОР — на&nbsp;дефект и&nbsp;замер. Оппоненту не&nbsp;к&nbsp;чему придраться.</li>
-          <li class="reveal"><strong>Готовый PDF.</strong> Наценки, налоги, итоги по&nbsp;группам затрат — документ формируется в&nbsp;один клик.</li>
-        </ul>
-      </div>
-      <div class="estimate-visual reveal" aria-hidden="true">
-        <div class="estimate-card">
-          <div class="estimate-head mono">СМЕТА · КВ. 214</div>
-          <div class="estimate-rows mono">
-            <div class="estimate-row"><span>Выравнивание стен, кухня</span><span>18,4 м²</span><span>23 552 ₽</span></div>
-            <div class="estimate-row"><span>Замена стеклопакета</span><span>1 шт</span><span>18 900 ₽</span></div>
-            <div class="estimate-row"><span>Перекладка плитки, санузел</span><span>6,2 м²</span><span>27 156 ₽</span></div>
-            <div class="estimate-row"><span>Ремонт стяжки, прихожая</span><span>6,2 м²</span><span>14 880 ₽</span></div>
-            <div class="estimate-row estimate-dim"><span>… ещё 14 позиций</span><span></span><span></span></div>
-            <div class="estimate-row estimate-sub"><span>Работы</span><span></span><span>148 210 ₽</span></div>
-            <div class="estimate-row estimate-sub"><span>Материалы</span><span></span><span>66 096 ₽</span></div>
+              <div class="estimate-panel is-active" id="panel-vor" role="tabpanel" aria-labelledby="tab-vor" data-estimate-panel="vor">
+                <div class="workspace-table mono">
+                  <div class="workspace-row workspace-row-head"><span>Работа</span><span>Ед.</span><span>Объём</span><span>Связано</span></div>
+                  <div class="workspace-row"><span><b>01</b> Выравнивание стен</span><span>м²</span><span>48,60</span><span class="source-chip">Д-03</span></div>
+                  <div class="workspace-row"><span><b>02</b> Замена стеклопакета</span><span>шт</span><span>1,00</span><span class="source-chip">Д-07</span></div>
+                  <div class="workspace-row"><span><b>03</b> Перекладка плитки</span><span>м²</span><span>4,80</span><span class="source-chip">Д-11</span></div>
+                  <div class="workspace-row"><span><b>04</b> Ремонт стяжки</span><span>м²</span><span>6,20</span><span class="source-chip">Д-14</span></div>
+                  <div class="workspace-row workspace-row-muted"><span>… ещё 14 позиций</span><span></span><span></span><span></span></div>
+                </div>
+                <div class="workspace-summary">
+                  <span>18 позиций</span>
+                  <strong>Объёмы связаны с замерами</strong>
+                </div>
+              </div>
+
+              <div class="estimate-panel" id="panel-estimate" role="tabpanel" aria-labelledby="tab-estimate" data-estimate-panel="estimate" hidden>
+                <div class="workspace-table mono">
+                  <div class="workspace-row estimate-row-head"><span>Позиция</span><span>Работы</span><span>Материалы</span><span>Всего</span></div>
+                  <div class="workspace-row"><span><b>01</b> Выравнивание стен</span><span>31 104 ₽</span><span>12 448 ₽</span><span>43 552 ₽</span></div>
+                  <div class="workspace-row"><span><b>02</b> Замена стеклопакета</span><span>4 900 ₽</span><span>14 000 ₽</span><span>18 900 ₽</span></div>
+                  <div class="workspace-row"><span><b>03</b> Перекладка плитки</span><span>17 856 ₽</span><span>9 300 ₽</span><span>27 156 ₽</span></div>
+                  <div class="workspace-row"><span><b>04</b> Ремонт стяжки</span><span>8 680 ₽</span><span>6 200 ₽</span><span>14 880 ₽</span></div>
+                  <div class="workspace-row workspace-row-muted"><span>… ещё 14 позиций</span><span></span><span></span><span></span></div>
+                </div>
+                <div class="workspace-summary workspace-summary-total">
+                  <span>Работы + материалы</span>
+                  <strong class="mono">214 306 ₽</strong>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="estimate-total"><span>Итого с накладными</span><strong class="mono">214 306 ₽</strong></div>
+          <p class="demo-disclaimer mono">ДЕМОНСТРАЦИОННЫЙ ОБЪЕКТ · ДАННЫЕ ДЛЯ ИЛЛЮСТРАЦИИ</p>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="container">
+        <p class="desktop-benefit reveal"><strong>Расчёт легче собрать, проверить и&nbsp;поправить,</strong> когда перед глазами весь контекст объекта.</p>
+      </div>
+    </section>
 
-  <section class="office" id="office">
-    <div class="container">
-      <p class="eyebrow reveal">Поле → офис</p>
-      <h2 class="reveal">Офис не&nbsp;пересобирает то, что эксперт уже увидел</h2>
-      <p class="section-lead reveal">Дело собирается там, где находится дефект, — на&nbsp;объекте. К&nbsp;моменту возвращения эксперта в&nbsp;офисе уже есть план, дефекты, фото и&nbsp;черновик сметы.</p>
-      <div class="office-grid">
-        <div class="office-card reveal">
-          <h3>Единый стандарт осмотра</h3>
-          <p>Все эксперты фиксируют одинаково. Качество материалов не зависит от того, кто выехал на объект.</p>
+    <section class="connection-section">
+      <div class="container connection-grid">
+        <div class="connection-copy reveal">
+          <p class="eyebrow">Всё связано</p>
+          <h2>Каждая цифра сохраняет контекст</h2>
+          <p class="section-lead">Замер относится к&nbsp;помещению. Дефект подтверждён фото. Работа в&nbsp;ВОР связана с&nbsp;тем, что обнаружено на&nbsp;объекте. Стоимость в&nbsp;смете — с&nbsp;конкретным объёмом.</p>
         </div>
-        <div class="office-card reveal">
-          <h3>Статусы всех дел</h3>
-          <p>Руководитель видит: что осмотрено, что посчитано, что готово к сдаче, где затык.</p>
+
+        <div class="data-chain reveal" aria-label="Связь данных: замер, дефект, работа, объём, стоимость">
+          <span>Замер</span><i></i><span>Дефект</span><i></i><span>Работа</span><i></i><span>Объём</span><i></i><span class="chain-final">Стоимость</span>
         </div>
-        <div class="office-card reveal">
-          <h3>Доказательная история</h3>
-          <p>У каждого фото и обмера есть дата, время и автор. В споре о достоверности материалов это аргумент.</p>
-        </div>
-        <div class="office-card reveal">
-          <h3>Заключение из данных дела</h3>
-          <p>Дефекты, нормативы, фото и смета уже связаны — документ собирается, а не набирается с нуля.</p>
+
+        <div class="benefit-grid">
+          <article class="benefit-card reveal">
+            <span class="benefit-mark" aria-hidden="true">↘</span>
+            <h3>Меньше ручного переноса</h3>
+            <p>Не нужно заново собирать объект из&nbsp;блокнота, галереи и&nbsp;отдельных таблиц.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-mark" aria-hidden="true">◎</span>
+            <h3>Понятнее проверка</h3>
+            <p>Видно, откуда появилась работа, объём и&nbsp;сумма.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-mark" aria-hidden="true">↻</span>
+            <h3>Проще корректировки</h3>
+            <p>Обновляйте исходные данные и&nbsp;пересчитывайте связанные позиции без полной пересборки.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="stats">
-    <div class="container stats-inner">
-      <div class="stat reveal"><strong>1 выезд</strong><span>вместо повторных визитов на объект</span></div>
-      <div class="stat reveal"><strong>0 перебивок</strong><span>размеры и фото не переносятся вручную</span></div>
-      <div class="stat reveal"><strong>×2 дел</strong><span>тем же составом экспертов</span></div>
-    </div>
-  </section>
+    <section class="cta-section" id="cta">
+      <div class="container">
+        <div class="cta-panel">
+          <div class="cta-copy">
+            <p class="eyebrow">Демонстрация planbee</p>
+            <h2>Посмотрите весь путь<br />на&nbsp;одном объекте</h2>
+            <p>Покажем, как сделать замер и&nbsp;фотофиксацию в&nbsp;мобильном приложении, а&nbsp;затем собрать ВОР и&nbsp;смету на&nbsp;компьютере.</p>
+            <div class="cta-route mono" aria-hidden="true">
+              <span>ПОЛЕ</span><i></i><span>ОФИС</span>
+            </div>
+          </div>
 
-  <section class="cta" id="cta">
-    <div class="container cta-inner reveal">
-      <h2>Покажем платформу на&nbsp;вашем процессе</h2>
-      <p class="lead">Расскажите, как устроена экспертиза у&nbsp;вас, — покажем, какие этапы RMS заберёт на&nbsp;себя уже сейчас.</p>
-      <div class="hero-actions">
-        <a class="btn btn-light" href="mailto:hello@rms.example?subject=Демо%20RMS">Запросить демо</a>
+          <form class="lead-form" id="lead-form" novalidate>
+            <div class="lead-form-row">
+              <label class="lead-field">
+                <span>Имя</span>
+                <input type="text" name="name" autocomplete="name" required maxlength="80" placeholder="Как к вам обращаться" />
+              </label>
+              <label class="lead-field">
+                <span>Телефон или Telegram</span>
+                <input type="text" name="contact" autocomplete="tel" required maxlength="80" placeholder="+7… или @username" />
+              </label>
+            </div>
+            <label class="lead-field">
+              <span>О вашей задаче <em>необязательно</em></span>
+              <textarea name="comment" rows="3" maxlength="500" placeholder="Например: замеры квартир и расчёт восстановительных работ"></textarea>
+            </label>
+            <div class="lead-hp" aria-hidden="true">
+              <label>
+                <span>Company</span>
+                <input type="text" name="company" tabindex="-1" autocomplete="off" />
+              </label>
+            </div>
+            <button class="btn btn-honey lead-submit" type="submit">Запросить демонстрацию</button>
+            <p class="form-note">Оставьте контакт — уточним ваш сценарий и&nbsp;договоримся о&nbsp;времени.</p>
+            <p class="lead-status" id="lead-status" role="status" aria-live="polite" hidden></p>
+          </form>
+        </div>
       </div>
-      <p class="cta-note mono">ранний доступ · внедрение вместе с командой RMS</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand-lockup footer-brand" href="#top" aria-label="planbee — наверх">
+        <img src="img/planbee-logo-v2.png" alt="planbee" />
+      </a>
+      <p>Замеры и сметы в одном рабочем процессе.</p>
+      <p class="mono">© 2026 PLANBEE</p>
     </div>
-  </section>
+  </footer>
 
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <a class="logo" href="#top">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1d4ed8"/><path d="M8 22V10h9a4 4 0 0 1 0 8h-5l6 4" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span>RMS</span>
-    </a>
-    <p>Платформа для экспертизы по ДДУ · © 2026</p>
-  </div>
-</footer>
-
-<script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
