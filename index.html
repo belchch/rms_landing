@@ -37,6 +37,7 @@
         <a href="#field">На объекте</a>
         <a href="#desktop">В офисе</a>
         <a href="#flow">Как работает</a>
+        <a href="#agent">ИИ-агент</a>
       </nav>
 
       <a class="btn btn-honey btn-sm header-cta" href="#cta">Записаться на демо</a>
@@ -454,6 +455,152 @@
             <h3>Проще корректировки</h3>
             <p>Обновите исходные данные&nbsp;— и&nbsp;пересчитайте позиции без полной пересборки.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AGENT (AI) ============ -->
+    <section class="section agent-section" id="agent">
+      <div class="agent-scanline" aria-hidden="true"></div>
+      <div class="container">
+        <div class="agent-head reveal">
+          <p class="eyebrow eyebrow-neon">Агент planbee · ИИ</p>
+          <h2>Пчела учится. Скоро объект <span class="neon-accent">соберёт себя сам</span></h2>
+          <p class="section-lead">Голосовое управление и распознавание дефектов по&nbsp;фото&nbsp;— только база. Дальше агент берёт на&nbsp;себя рутину: ведомость, смету, проверку норм и&nbsp;отчёт заказчику. Вы остаётесь тем, кто принимает решения.</p>
+        </div>
+
+        <div class="agent-grid">
+          <div class="agent-stage reveal">
+            <figure class="agent-bee" role="img" aria-label="Пчела planbee в кибер-шлеме с двумя усиками, между которыми проскакивает электрическая дуга">
+              <svg viewBox="0 0 260 220" fill="none" aria-hidden="true">
+                <defs>
+                  <clipPath id="agentBody"><ellipse cx="108" cy="132" rx="62" ry="44" /></clipPath>
+                  <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+                    <feGaussianBlur stdDeviation="3.2" result="b" />
+                    <feMerge><feMergeNode in="b" /><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+                  </filter>
+                  <radialGradient id="tip" cx=".4" cy=".35"><stop offset="0" stop-color="#fff" /><stop offset=".45" stop-color="#e9d5ff" /><stop offset="1" stop-color="#8b5cf6" /></radialGradient>
+                </defs>
+
+                <!-- крылья -->
+                <g class="agent-wings">
+                  <path d="M112 90 C 96 36, 28 26, 36 60 C 42 82, 90 98, 112 90 Z" fill="#a78bfa" fill-opacity=".26" stroke="#a78bfa" stroke-width="2" stroke-linejoin="round" />
+                  <path d="M112 92 C 104 58, 46 58, 52 84 C 56 102, 98 106, 112 92 Z" fill="#c4b5fd" fill-opacity=".22" stroke="#a78bfa" stroke-width="2" stroke-linejoin="round" />
+                  <g stroke="#e9d5ff" stroke-width="1.1" stroke-opacity=".75">
+                    <path d="M112 90 L44 52 M112 90 L64 44 M112 92 L58 80 M112 92 L74 68" />
+                  </g>
+                </g>
+
+                <!-- лапки -->
+                <g stroke="#263238" stroke-width="5" stroke-linecap="round">
+                  <path d="M70 168 l-10 18 M96 176 l-4 18 M126 174 l6 18" />
+                </g>
+
+                <!-- тело -->
+                <ellipse cx="108" cy="132" rx="62" ry="44" fill="#f5b82e" stroke="#263238" stroke-width="4" />
+                <g clip-path="url(#agentBody)">
+                  <path d="M84 84 V180 M114 84 V180" stroke="#263238" stroke-width="15" stroke-linecap="round" />
+                </g>
+
+                <!-- голова -->
+                <circle cx="176" cy="122" r="28" fill="#263238" />
+                <circle cx="188" cy="130" r="6.5" fill="#fff" />
+                <circle cx="190" cy="130" r="3" fill="#263238" />
+                <path d="M196 144 q6 4 10 0" stroke="#f5b82e" stroke-width="2.4" stroke-linecap="round" />
+
+                <!-- шлем: купол + HUD-визор -->
+                <path d="M145 124 A31 31 0 0 1 207 124 Z" fill="#1a1626" stroke="#a78bfa" stroke-width="2.4" stroke-linejoin="round" />
+                <path d="M156 109 A24 24 0 0 1 196 104" stroke="#8b5cf6" stroke-width="1.4" stroke-opacity=".8" />
+                <path d="M147 124 H205" stroke="#a78bfa" stroke-width="3.2" stroke-linecap="round" />
+                <path d="M178 125 H206 V134 Q202 143 192 143 H178 Z" fill="#a78bfa" fill-opacity=".38" stroke="#c4b5fd" stroke-width="1.2" />
+                <circle cx="199" cy="113" r="3.4" fill="#c4b5fd" />
+                <path d="M158 100 h9" stroke="#c4b5fd" stroke-width="2" stroke-linecap="round" />
+
+                <!-- усики-антенны -->
+                <g stroke-linecap="round">
+                  <path d="M164 92 L150 58" stroke="#1a1626" stroke-width="5" />
+                  <path d="M164 92 L150 58" stroke="#8b5cf6" stroke-width="1.6" />
+                  <path d="M190 90 L206 56" stroke="#1a1626" stroke-width="5" />
+                  <path d="M190 90 L206 56" stroke="#8b5cf6" stroke-width="1.6" />
+                </g>
+                <g filter="url(#neon)">
+                  <circle cx="150" cy="58" r="6.5" fill="url(#tip)" />
+                  <circle cx="206" cy="56" r="6.5" fill="url(#tip)" />
+                </g>
+
+                <!-- электрическая дуга -->
+                <g class="agent-arc" filter="url(#neon)" stroke="#e9d5ff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path class="arc arc-a" d="M155 56 L164 44 L171 60 L180 40 L188 58 L195 44 L201 54" />
+                  <path class="arc arc-b" d="M155 56 L162 64 L172 46 L181 62 L189 44 L196 60 L201 54" />
+                </g>
+                <g class="agent-sparks" fill="#e9d5ff">
+                  <circle class="spark" cx="168" cy="38" r="1.8" />
+                  <circle class="spark" cx="186" cy="66" r="1.5" />
+                  <circle class="spark" cx="198" cy="36" r="1.6" />
+                </g>
+              </svg>
+            </figure>
+
+            <div class="agent-dialog cyber-card">
+              <div class="cyber-card-in">
+                <div class="agent-say">
+                  <span class="agent-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                  <p>«Стена три&nbsp;— три шестьсот сорок. На&nbsp;стяжке трещина, сфоткал»</p>
+                </div>
+                <div class="agent-reply">
+                  <p class="agent-reply-label mono">Агент разобрал</p>
+                  <div class="agent-row">
+                    <span class="agent-row-k mono">Замер · стена 3</span>
+                    <b class="mono">3 640 мм</b>
+                    <span class="agent-row-s is-ok">записан ✓</span>
+                  </div>
+                  <div class="agent-row">
+                    <span class="agent-row-k mono">Дефект Д-14 · по фото · 92%</span>
+                    <b>Трещина стяжки</b>
+                    <span class="agent-row-s">привязан к месту</span>
+                  </div>
+                  <div class="agent-row is-offer">
+                    <span class="agent-row-k mono">→ в ВОР · предложение</span>
+                    <b>Ремонт стяжки · 6,2 м² · <em class="mono">≈ 18 400 ₽</em></b>
+                    <button type="button" class="btn btn-honey btn-xs">Принять</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="agent-skills reveal" aria-label="Способности агента">
+            <li class="cyber-card"><div class="cyber-card-in agent-skill">
+              <span class="skill-hex is-now"><svg viewBox="0 0 20 20"><path d="M6 8v4M10 5v10M14 7v6" /></svg></span>
+              <span class="skill-text"><b>Голос</b>Диктуйте замеры и&nbsp;дефекты&nbsp;— агент пишет в&nbsp;объект.</span>
+              <span class="skill-tag is-now mono">Сейчас</span>
+            </div></li>
+            <li class="cyber-card"><div class="cyber-card-in agent-skill">
+              <span class="skill-hex is-now"><svg viewBox="0 0 20 20"><rect x="3" y="6" width="14" height="10" rx="2" /><circle cx="10" cy="11" r="3" /><path d="M7 6l1-2h4l1 2" /></svg></span>
+              <span class="skill-text"><b>Дефект по фото</b>Узнаёт тип дефекта на&nbsp;снимке и&nbsp;привязывает к&nbsp;месту.</span>
+              <span class="skill-tag is-now mono">Сейчас</span>
+            </div></li>
+            <li class="cyber-card"><div class="cyber-card-in agent-skill">
+              <span class="skill-hex"><svg viewBox="0 0 20 20"><path d="M4 6h12M4 10h12M4 14h8" /></svg></span>
+              <span class="skill-text"><b>ВОР сам</b>Подбирает работы и&nbsp;объёмы из&nbsp;замеров без&nbsp;ручного ввода.</span>
+              <span class="skill-tag mono">Скоро</span>
+            </div></li>
+            <li class="cyber-card"><div class="cyber-card-in agent-skill">
+              <span class="skill-hex"><svg viewBox="0 0 20 20"><path d="M7 4h6M7 8h6M8 12h5M10 4v12M6 16h8" /></svg></span>
+              <span class="skill-text"><b>Смета сама</b>Расценки, материалы, итог&nbsp;— и&nbsp;пересчёт при правках.</span>
+              <span class="skill-tag mono">Скоро</span>
+            </div></li>
+            <li class="cyber-card"><div class="cyber-card-in agent-skill">
+              <span class="skill-hex"><svg viewBox="0 0 20 20"><path d="M4 10l4 4 8-8" /></svg></span>
+              <span class="skill-text"><b>Проверка по нормам</b>Сверяет объёмы и&nbsp;решения с&nbsp;СП и&nbsp;подсвечивает риски.</span>
+              <span class="skill-tag mono">В планах</span>
+            </div></li>
+            <li class="cyber-card"><div class="cyber-card-in agent-skill">
+              <span class="skill-hex"><svg viewBox="0 0 20 20"><path d="M5 3h7l3 3v11H5z M12 3v3h3 M8 10h5M8 13h5" /></svg></span>
+              <span class="skill-text"><b>Отчёт заказчику</b>Собирает понятный отчёт с&nbsp;фото, планом и&nbsp;цифрами.</span>
+              <span class="skill-tag mono">В планах</span>
+            </div></li>
+          </ul>
         </div>
       </div>
     </section>
