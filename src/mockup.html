@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>planbee — макет приложения в стиле плана</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="wordmark" href="../" aria-label="planbee — на главную">{{WM_WHITE}}</a>
+      <nav class="site-nav" aria-label="Разделы"><a href="#screens">Экраны</a><a href="#rules">Правила</a><a href="#was-now">Было и стало</a></nav>
+      <a class="btn btn-sm" href="../#cta"><span class="dot"></span>Записаться на демо</a>
+    </div>
+  </header>
+  <main>
+    <section class="section" id="screens">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Макет · основные моменты</p>
+          <h2>Мобильное приложение в стиле плана</h2>
+          <p class="lead">Четыре экрана, по которым видно правило: стены линиями, проёмы разрывами, чёрное и белое, один мёд — точка света. Не все экраны, только те, где стиль решает.</p>
+        </div>
+        <div class="phones phones-4">{{SCREENS:launch,projects,plan,wall}}</div>
+      </div>
+    </section>
+
+    <section class="section" id="rules">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Правила стиля</p>
+          <h2>Что меняется в оболочке</h2>
+        </div>
+        <div class="notes">
+          <div class="note"><h3>Марка и запуск</h3><p>Новый знак вместо пчелы с текстом на старте, входе, в шапке проектов и на экране «только телефоны». На запуске точка зажигается за 0,7 с. Иконка приложения — комната «b» с точкой.</p></div>
+          <div class="note"><h3>Углы</h3><p>Кнопка 12 → 4, поле 12 → 4, карточка 18 → 6, миниатюра 14 → 4, чипы-стадионы → прямоугольники. Системные листы и алерты iOS не трогаем.</p></div>
+          <div class="note"><h3>Мёд как свет</h3><p>Одна медовая заливка на экран — первичная кнопка. Остальное — точка или волосяная линия: активная вкладка, подчёркивание поля, край выбранной карточки, живой замер дальномера на стене плана.</p></div>
+          <div class="note"><h3>Линии как стены</h3><p>Разделители и рамки — 1 px чернил вместо серых подложек и теней. Карточки — комнаты с проёмом в левой стене.</p></div>
+          <div class="note"><h3>Иконки</h3><p>Тот же набор Lucide, 2 px, но концы штриха и стыки прямые. Первый шаг — переписать концы в бандле SVG.</p></div>
+          <div class="note"><h3>Шрифт и фон</h3><p>Manrope остаётся, заголовки 800 с плотным трекингом, цифры табличные. Тёплые фоны и графитовый текст оболочки остаются: знак на них работает.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="was-now">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Было и стало</p>
+          <h2>Одним абзацем</h2>
+        </div>
+        <div class="was-now">
+          <div><div class="lbl">Было</div>Пчела-талисман рядом с текстом, «bee» мёдом, скруглённые карточки с мягкими подложками, медовые заливки на выделениях, иконки с круглыми концами.</div>
+          <div><div class="lbl">Стало</div>Слово из стен с точкой лазера, чёрное и белое, прямые углы у своих компонентов, линии 1 px как стены, мёд только точкой света и одной кнопкой, иконки с прямыми концами.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="wordmark" href="../" aria-label="planbee">{{WM_BLACK}}</a>
+      <span>Макет для обсуждения, 2026-09-30.</span>
+      <nav class="footer-links"><a href="../">На лендинг</a></nav>
+    </div>
+  </footer>
+  <script type="module" src="../app.js"></script>
+</body>
+</html>

@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <path d="M32 3.5 56.5 17.7v28.6L32 60.5 7.5 46.3V17.7Z" fill="#ffffff" stroke="#2F6FA3" stroke-width="5" stroke-linejoin="round"/>
-  <path d="M22 42V24h14v9h8" fill="none" stroke="#263238" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="25" cy="21" r="5.4" fill="#F5B82E" stroke="#263238" stroke-width="2.4"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#000000"/><defs><radialGradient id="tg"><stop offset="0" stop-color="#F4BE35" stop-opacity="0.95"/><stop offset="0.35" stop-color="#F4BE35" stop-opacity="0.55"/><stop offset="0.65" stop-color="#F4BE35" stop-opacity="0.18"/><stop offset="1" stop-color="#F4BE35" stop-opacity="0"/></radialGradient></defs><g fill="#FFFFFF"><rect x="13.5" y="43.8" width="7.2" height="14.0"/><rect x="13.5" y="6.2" width="7.2" height="25.4"/><rect x="13.5" y="19.1" width="36.9" height="7.2"/><rect x="43.3" y="43.8" width="7.2" height="14.0"/><rect x="43.3" y="19.1" width="7.2" height="12.5"/><rect x="13.5" y="50.6" width="36.9" height="7.2"/></g><circle cx="17" cy="38" r="19" fill="url(#tg)"/><circle cx="17" cy="38" r="3" fill="#F4BE35"/></svg>

@@ -1,55 +1,44 @@
-# planbee — brand guide
+# planbee — brand guide (plan style, 2026-09-30)
 
-`planbee` is a floor-plan and renovation-planning product. The brand should feel friendly, practical, modern, and technically trustworthy.
+`planbee` измеряет комнаты лазерным дальномером и превращает замеры в план,
+ведомость и смету. Бренд говорит на языке чертежа: прямые стены, проёмы,
+чёрное и белое и одна точка света.
 
-## Name and wordmark
+## Знак
 
-- Canonical spelling: `planbee` — all lowercase, one word.
-- `plan` is charcoal.
-- `bee` is honey yellow.
-- The two parts use the same rounded sans-serif typeface, weight, size, baseline, and spacing. Color is the only distinction.
-- Do not use `PlanBee`, `Planbee`, `Plan Bee`, or change the size or weight of `bee`.
+- Слово `planbee` набрано не шрифтом, а стенами: каждая буква — комната из
+  прямых стен в пропорциях Manrope 800 (x-высота, выносные, ширины букв).
+- В стенах прорезаны проёмы — след пчелы, которая пролетела сквозь слово.
+- В проёме ножки `b` светится точка лазера: единственный цвет знака.
+- Знак существует в двух версиях: чёрные стены на белом и белые стены на
+  чёрном. Никаких других цветовых версий, никаких градиентов на стенах.
+- Мастер-файлы: `img/planbee-wordmark-black.svg`, `img/planbee-wordmark-white.svg`.
+  Иконка: комната `b` с точкой, `img/app-icon-b-black.svg`, `favicon.svg`.
+- Написание в тексте: `planbee`, одним словом, строчными.
 
-## Logo concept
+## Палитра
 
-The apartment floor plan is the primary symbol. A small geometric bee wearing a construction hard hat flies inside the rooms. Its dotted blueprint-blue flight path transitions into and completes part of the floor-plan outline, communicating that the bee is actively drawing the plan.
-
-The floor plan should remain simple and readable at small sizes:
-
-- outer apartment boundary;
-- two or three room divisions;
-- one clear door-opening arc;
-- no furniture or detailed architectural notation.
-
-The bee should occupy roughly one quarter of the icon width and remain fully inside the plan.
-
-## Palette
-
-| Role | Color | Hex |
+| Роль | Цвет | Hex |
 | --- | --- | --- |
-| Honey / `bee` | Honey yellow | `#F5B82E` |
-| Text / bee details | Charcoal | `#263238` |
-| Floor plan / flight path | Blueprint blue | `#2F6FA3` |
-| Background | White | `#FFFFFF` |
+| Чернила / стены | чёрный | `#000000` |
+| Бумага | белый | `#FFFFFF` |
+| Точка света | мёд | `#F4BE35` |
+| Второстепенный текст | серый | `#6A6A6A` (на чёрном `#9A9A9A`) |
 
-Use these colors as flat fills. Avoid gradients, gloss, shadows, bevels, textures, and 3D effects.
+Мёд — не заливка, а точка: индикатор, курсор замера, активная вкладка,
+подчёркивание поля. Одна медовая заливка на экран, не больше.
 
-## Visual style
+## Форма
 
-- Flat minimal vector-like geometry.
-- Clean rounded shapes and consistent line weights.
-- Friendly but professional rather than childish.
-- Strong silhouette, balanced negative space, and good small-size legibility.
-- No honeycomb motifs, rulers, pencils, slogans, borders, watermarks, or decorative architectural detail.
+- Углы прямые. Радиусы только у системного хрома платформы.
+- Линии волосяные, 1 px, как стены на плане; разделители и рамки вместо
+  серых подложек и теней.
+- Карточки — комнаты: рамка 1 px с проёмом в левой стене.
+- Иконки с прямыми концами штриха и прямыми стыками, толщина 2 px.
+- Шрифт Manrope, заголовки 800 с трекингом −0.02em; цифры в JetBrains Mono
+  табличные.
 
-## Primary asset
+## Движение
 
-Current approved concept: [`img/planbee-logo-v2.png`](img/planbee-logo-v2.png)
-
-The PNG is the current visual source for the landing, not a production vector master. Before final release, recreate and optically refine the mark as SVG, including exact geometry, kerning, and small-size testing.
-
-Suggested alt text: `planbee logo — a small construction bee flying inside and drawing an apartment floor plan`.
-
-## Canonical design brief
-
-Create a horizontal logo lockup with a compact apartment floor-plan icon on the left and the lowercase wordmark `planbee` on the right. Inside the plan, a small friendly geometric bee in a construction hard hat flies through the rooms. Its blueprint-blue dotted route visibly draws and completes a section of the plan. Set `plan` in charcoal and `bee` in honey yellow; both parts must differ only by color. Use flat minimal rounded geometry on white with no gradients, shadows, texture, 3D effects, extra objects, or extra text.
+Движется только точка: зажигается при запуске и мягко пульсирует, пока идёт
+замер. Стены не анимируются.

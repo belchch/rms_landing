@@ -10,6 +10,7 @@ export default defineConfig({
       preserveEntrySignatures: "strict",
       input: {
         site: resolve("index.html"),
+        mockup: resolve("mockup/index.html"),
         worker: resolve("worker.js"),
       },
       output: {
