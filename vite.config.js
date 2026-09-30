@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         site: resolve("index.html"),
         mockup: resolve("mockup/index.html"),
+        concept: resolve("concept/index.html"),
         worker: resolve("worker.js"),
       },
       output: {

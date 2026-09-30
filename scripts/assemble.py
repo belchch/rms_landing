@@ -22,7 +22,13 @@ def render(src):
     out = re.sub(r'\{\{WM_BLACK\}\}', lambda m: inline_wm('black'), out)
     return out
 
-os.makedirs('mockup', exist_ok=True)
-open('index.html', 'w', encoding='utf-8').write(render(open('src/index.html', encoding='utf-8').read()))
-open('mockup/index.html', 'w', encoding='utf-8').write(render(open('src/mockup.html', encoding='utf-8').read()))
-print('assembled index.html, mockup/index.html; wordmarks inlined:', counter[0])
+PAGES = {'index': 'index.html', 'mockup': 'mockup/index.html', 'concept': 'concept/index.html', 'prototype': 'prototype/index.html'}
+done = []
+for name, out in PAGES.items():
+    src_path = f'src/{name}.html'
+    if not os.path.exists(src_path):
+        continue
+    os.makedirs(os.path.dirname(out) or '.', exist_ok=True)
+    open(out, 'w', encoding='utf-8').write(render(open(src_path, encoding='utf-8').read()))
+    done.append(out)
+print('assembled', ', '.join(done), '; wordmarks inlined:', counter[0])
