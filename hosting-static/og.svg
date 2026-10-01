@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="laser"><stop stop-color="#fff"/><stop offset=".35" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#141414"/>
+  <rect width="500" height="630" fill="#F4C046"/>
+  <g transform="translate(30 155) scale(2.15)"><path fill="#141414" d="M43 89L66 89L66 121L47 121L34 108L34 98ZM86 84.19L130 70.32L130 118L118 130L86 130L70 114L70 100.19ZM134 109L134 99L144 89L182 89L202 109ZM134 137L134 123L216 123L216 137ZM216 151L196 171L168 171L148 151Z"/><path fill="#fff" d="M86 80L86 59L134 37.63L207.82 23.28L214.14 26.93L216 33.88L212.38 40.15Z"/></g>
+  <g transform="translate(555 100) scale(.078)"><title>planbee</title><defs><radialGradient id="pb-dot"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".3" stop-color="#fff" stop-opacity=".5"/><stop offset=".65" stop-color="#fff" stop-opacity=".14"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs><path fill="#fff" d="M0 1070h200v850h-200zM0 360h200v370h-200zM0 360h1030v200h-1030zM830 1070h200v370h-200zM830 360h200v370h-200zM0 1240h1030v200h-1030zM1226 1050h200v390h-200zM1226 0h200v710h-200zM2388 820h200v620h-200zM2388 360h200v120h-200zM1802 360h786v200h-786zM1622 1240h966v200h-966zM1622 820h200v620h-200zM1622 820h966v200h-966zM2766 990h200v450h-200zM2766 360h200v290h-200zM2766 360h1014v200h-1014zM3580 990h200v450h-200zM3580 360h200v290h-200zM3958 1050h200v390h-200zM3958 0h200v710h-200zM3958 360h1030v200h-1030zM4788 1050h200v390h-200zM4788 360h200v350h-200zM3958 1240h1030v200h-1030zM5068 360h1055v200h-1055zM5068 810h200v630h-200zM5068 360h200v110h-200zM5068 1240h1055v200h-1055zM5068 775h1055v200h-1055zM5923 810h200v165h-200zM5923 360h200v110h-200zM5923 1090h200v350h-200zM6204 360h1055v200h-1055zM6204 810h200v630h-200zM6204 360h200v110h-200zM6204 1240h1055v200h-1055zM6204 775h1055v200h-1055zM7059 810h200v165h-200zM7059 360h200v110h-200zM7059 1090h200v350h-200z"/><circle cx="4058" cy="880" r="520" fill="url(#pb-dot)"/><circle cx="4058" cy="880" r="80" fill="#fff"/></g>
+  <g fill="none" stroke="#F5F5F3" stroke-width="5" stroke-linejoin="miter">
+    <path d="M580 325h94m65 0h371v240H580V325z"/>
+    <path d="M870 325v75m0 58v107M870 470h105m55 0h80" stroke-width="4"/>
+  </g>
+  <g fill="none" stroke="#F5F5F3" stroke-width="2">
+    <path d="M674 319h65m-65 12h65m0-14v16m-65-16v16"/>
+    <path d="M870 400h52m0 0a52 52 0 0 1-52 52" stroke-dasharray="5 5"/>
+    <path d="M1030 470v-55m0 0a55 55 0 0 0-55 55" stroke-dasharray="5 5"/>
+  </g>
+  <path d="M580 295v12m0-6h290m0-6v12" stroke="#F4C046" stroke-width="2"/>
+  <text x="725" y="288" fill="#F4C046" font-family="Helvetica Neue, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="middle">5,20</text>
+  <circle cx="735" cy="301" r="32" fill="url(#laser)"/><circle cx="735" cy="301" r="5" fill="#fff"/>
+  <text x="724" y="452" fill="#F5F5F3" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" letter-spacing="2" text-anchor="middle">КУХНЯ-ГОСТИНАЯ</text>
+  <text x="990" y="387" fill="#F5F5F3" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" letter-spacing="2" text-anchor="middle">СПАЛЬНЯ</text>
+  <text x="990" y="523" fill="#F5F5F3" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" letter-spacing="2" text-anchor="middle">С/У</text>
+  <text x="40" y="575" fill="#141414" font-family="Helvetica Neue, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="1">ЗАМЕР НА ОБЪЕКТЕ</text>
+  <text x="580" y="605" fill="#F4C046" font-family="Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2">СМЕТА В ОФИСЕ</text>
+</svg>

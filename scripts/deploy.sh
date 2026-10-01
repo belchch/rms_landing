@@ -13,7 +13,8 @@ npm ci
 npm run build
 
 # server/ — сборка воркера под edge-рантайм, наружу не отдаётся.
-rsync -az --delete --exclude 'server/' dist/ "${host}:${remote}/www/landing/"
+# Keep the independent /next/ preview alongside the main landing.
+rsync -az --delete --exclude 'server/' --exclude 'next/' dist/ "${host}:${remote}/www/landing/"
 rsync -az functions/api/lead.js "${host}:${remote}/lead/lead.mjs"
 rsync -az deploy/lead-server.mjs "${host}:${remote}/lead/lead-server.mjs"
 

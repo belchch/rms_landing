@@ -1,55 +1,28 @@
-# planbee — brand guide
+# planbee — бренд лендинга
 
-`planbee` is a floor-plan and renovation-planning product. The brand should feel friendly, practical, modern, and technically trustworthy.
+Текущий визуальный источник — макет `planbee-landing.html`, переданный для ребрендинга 2026-09-30. Рабочие векторные знаки находятся в `img/planbee-bee*.svg` и `img/planbee-wordmark*.svg`.
 
-## Name and wordmark
+## Знак
 
-- Canonical spelling: `planbee` — all lowercase, one word.
-- `plan` is charcoal.
-- `bee` is honey yellow.
-- The two parts use the same rounded sans-serif typeface, weight, size, baseline, and spacing. Color is the only distinction.
-- Do not use `PlanBee`, `Planbee`, `Plan Bee`, or change the size or weight of `bee`.
+- Название пишется строчными буквами: `planbee`.
+- Слово собрано из сегментов стен и проёмов. Белая лазерная точка стоит внутри знака.
+- Пчела — геометрический символ из отдельных граней с белым крылом.
+- В hero пчела находится на медовой панели, слово — на графитовой. В шапке и подвале они образуют горизонтальную композицию.
+- Старые растровые знаки `planbee-logo-v2.png` и `planbee-logo-trimmed.png` оставлены только как архив предыдущей версии.
 
-## Logo concept
+## Цвет и шрифты
 
-The apartment floor plan is the primary symbol. A small geometric bee wearing a construction hard hat flies inside the rooms. Its dotted blueprint-blue flight path transitions into and completes part of the floor-plan outline, communicating that the bee is actively drawing the plan.
+| Роль | Цвет |
+| --- | --- |
+| Основной тёмный | `#141414` |
+| Медовый | `#F4C046` |
+| Светлый фон и текст | `#F5F5F3` |
+| ИИ-акцент | `#B266FF` |
 
-The floor plan should remain simple and readable at small sizes:
+Крупные заголовки и короткие метки набраны Jura, основной текст — Manrope. Шрифты хранятся локально в `hosting-static/fonts/`.
 
-- outer apartment boundary;
-- two or three room divisions;
-- one clear door-opening arc;
-- no furniture or detailed architectural notation.
+## Композиция
 
-The bee should occupy roughly one quarter of the icon width and remain fully inside the plan.
+Первый экран — две панели и шесть состояний, управляемых прокруткой: пчела, план, замер, ИИ и общий знак. Переключателей вариантов из исходного макета на опубликованном сайте нет. Остальные блоки продолжают последовательность «объект → офис → ИИ → демонстрация».
 
-## Palette
-
-| Role | Color | Hex |
-| --- | --- | --- |
-| Honey / `bee` | Honey yellow | `#F5B82E` |
-| Text / bee details | Charcoal | `#263238` |
-| Floor plan / flight path | Blueprint blue | `#2F6FA3` |
-| Background | White | `#FFFFFF` |
-
-Use these colors as flat fills. Avoid gradients, gloss, shadows, bevels, textures, and 3D effects.
-
-## Visual style
-
-- Flat minimal vector-like geometry.
-- Clean rounded shapes and consistent line weights.
-- Friendly but professional rather than childish.
-- Strong silhouette, balanced negative space, and good small-size legibility.
-- No honeycomb motifs, rulers, pencils, slogans, borders, watermarks, or decorative architectural detail.
-
-## Primary asset
-
-Current approved concept: [`img/planbee-logo-v2.png`](img/planbee-logo-v2.png)
-
-The PNG is the current visual source for the landing, not a production vector master. Before final release, recreate and optically refine the mark as SVG, including exact geometry, kerning, and small-size testing.
-
-Suggested alt text: `planbee logo — a small construction bee flying inside and drawing an apartment floor plan`.
-
-## Canonical design brief
-
-Create a horizontal logo lockup with a compact apartment floor-plan icon on the left and the lowercase wordmark `planbee` on the right. Inside the plan, a small friendly geometric bee in a construction hard hat flies through the rooms. Its blueprint-blue dotted route visibly draws and completes a section of the plan. Set `plan` in charcoal and `bee` in honey yellow; both parts must differ only by color. Use flat minimal rounded geometry on white with no gradients, shadows, texture, 3D effects, extra objects, or extra text.
+Карточка для соцсетей и иконка iOS генерируются из тех же SVG через `python3 scripts/generate-og.py`.
